@@ -12,8 +12,7 @@ function execute(key, page) {
         return GBK.encode(s);
     }
 
-    var url = String.format('{0}/modules/article/search.php?searchkey={1}&searchtype=all', host, gbkEncode(key));
-    // log(url);
+    var url = http.post(host + '/modules/article/search.php').params({'searchtype':'all','searchkey':key}).html();
 
     let response = fetch(url);
     if (response.ok) {
