@@ -8,6 +8,7 @@ function execute(key, page) {
         body: {
             searchkey : key, searchtype: 'all'
         }
+		});
     if (response.ok) {
         let doc = response.html('gbk');
 
