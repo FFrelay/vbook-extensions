@@ -4,7 +4,7 @@
     "author": "FFrelay",
     "version": 1,
     "source": "https://69shuba.cx",
-    "regexp": "(www|m).(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book)/.*?\\.htm",
+    "regexp": "(www.|m.)?(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book)/.*?\\.htm",
     "description": "Đọc truyện trên trang 69书吧",
     "locale": "zh_CN",
     "language": "javascript",
