@@ -7,10 +7,10 @@
     {
       "name": "69书吧",
       "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/master/bachngocsach/plugin.zip",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/plugin.zip",
       "version": 9,
       "source": "https://bachngocsach.com.vn/reader",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/master/bachngocsach/icon.png",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/icon.png",
       "description": "Đọc truyện trên trang 69书吧",
       "type": "chinese_novel",
       "locale": "zh_CN"
