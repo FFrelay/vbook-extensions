@@ -3,18 +3,11 @@ load('config.js');
 
 function execute(key, page) {
 
-
-    // gb18030, gbk uri encode
-    // '打更人' --> '%B4%F2%B8%FC%C8%CB'
-    // https://www.69shu.com/modules/article/search.php?searchkey=%B4%F2%B8%FC%C8%CB&searchtype=all
-    var gbkEncode = function(s) {
-        load('gbk.js');
-        return GBK.encode(s);
-    }
-
-    var url = http.post(host + '/modules/article/search.php').params({'searchtype':'all','searchkey':key}).html();
-
-    let response = fetch(url);
+    let response = fetch(BASE_URL + '/modules/article/search.php', {
+        method: "POST",
+        body: {
+            searchkey : key, searchtype: 'all'
+        }
     if (response.ok) {
         let doc = response.html('gbk');
 
