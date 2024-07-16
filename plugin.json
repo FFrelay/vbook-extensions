@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "author": "vBook",
+    "description": ""
+  },
+  "data": [
+    {
+      "name": "69书吧",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/master/bachngocsach/plugin.zip",
+      "version": 9,
+      "source": "https://bachngocsach.com.vn/reader",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/master/bachngocsach/icon.png",
+      "description": "Đọc truyện trên trang 69书吧",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+  ]
+}
