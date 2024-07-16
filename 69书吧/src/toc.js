@@ -11,7 +11,7 @@ function execute(url) {
         let doc = response.html('gbk');
 
 		var data = [];
-		var elems = $.QA(doc, 'div.catalog > ul > li > a:not(#bookcase)');
+		var elems = $.QA(doc, '-#div.catalog > ul > li > a:not(#bookcase)');
 		
 		elems.forEach(function(e) {
 			data.push({
