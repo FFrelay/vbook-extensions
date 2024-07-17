@@ -7,8 +7,7 @@ function execute(url) {
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html('gbk');
-		
-		doc.select('div#jianjie-popup.jianjie-popup').remove()
+
         return Response.success({
             name: $.Q(doc, 'div.booknav2 > h1 > a').text(),
             cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
