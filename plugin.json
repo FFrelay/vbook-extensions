@@ -26,6 +26,18 @@
       "type": "comic",
       "locale": "locale",
 	  "tag": "nsfw"
+    },
+	{
+      "name": "E-Hentai",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/plugin.zip",
+      "version": 1,
+      "source": "https://nhentai.net",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/icon.png",
+      "description": "Đọc truyện trên trang E-Hentai",
+      "type": "comic",
+      "locale": "locale",
+	  "tag": "nsfw"
     }
   ]
 }
