@@ -14,6 +14,18 @@
       "description": "Đọc truyện trên trang 69书吧",
       "type": "chinese_novel",
       "locale": "zh_CN"
+    },
+	{
+      "name": "nhentai",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/plugin.zip",
+      "version": 1,
+      "source": "https://nhentai.net",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/icon.png",
+      "description": "Đọc truyện trên trang nhentai",
+      "type": "comic",
+      "locale": "locale",
+	  "tag": "nsfw"
     }
   ]
 }
