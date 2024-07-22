@@ -6,7 +6,7 @@ function execute(url) {
         cover: info.select(".gallery_left .cover img").attr("src"),
         host: "https://hentaifox.com/",
         author: info.select(".gallery_right .artists li a").text(),
-        description: ""
-        detail: info.select(".gallery_right .info")).html(),
+        description: "",
+        detail: info.select(".gallery_right .categories").text(),
     })
 }
