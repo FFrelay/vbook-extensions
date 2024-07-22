@@ -24,19 +24,31 @@
       "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/icon.png",
       "description": "Đọc truyện trên trang nhentai",
       "type": "comic",
-      "locale": "locale",
+      "locale": "en-US",
 	  "tag": "nsfw"
     },
 	{
       "name": "E-Hentai",
       "author": "FFrelay",
       "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/plugin.zip",
-      "version": 1,
-      "source": "https://nhentai.net",
+      "version": 2,
+      "source": "https://e-hentai.org",
       "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/icon.png",
       "description": "Đọc truyện trên trang E-Hentai",
       "type": "comic",
-      "locale": "locale",
+      "locale": "en-US",
+	  "tag": "nsfw"
+    },
+	{
+      "name": "HentaiFox",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaifox/plugin.zip",
+      "version": 2,
+      "source": "https://hentaifox.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaifox/icon.png",
+      "description": "Đọc truyện trên trang HentaiFox",
+      "type": "comic",
+      "locale": "en-US",
 	  "tag": "nsfw"
     }
   ]
