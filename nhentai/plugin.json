@@ -2,10 +2,10 @@
   "metadata": {
     "name": "nHentai",
     "author": "FFrelay",
-    "version": 1,
+    "version": 2,
     "source": "https://nhentai.net",
     "regexp": "(www.)?nhentai.net/g/\\d+/?$",
-    "description": "Đọc truyện trên trang nHentai",
+    "description": "Đọc truyện trên trang nhentai",
     "locale": "locale",
     "language": "javascript",
     "type": "comic",

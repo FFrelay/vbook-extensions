@@ -19,7 +19,7 @@
       "name": "nhentai",
       "author": "FFrelay",
       "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://nhentai.net",
       "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/icon.png",
       "description": "Đọc truyện trên trang nhentai",
