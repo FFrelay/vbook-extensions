@@ -6,7 +6,7 @@
     "source": "https://nhentai.net",
     "regexp": "(www.)?nhentai.net/g/\\d+/?$",
     "description": "Đọc truyện trên trang nhentai",
-    "locale": "locale",
+    "locale": "en-US",
     "language": "javascript",
     "type": "comic",
     "tag": "nsfw"
