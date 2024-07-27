@@ -6,7 +6,7 @@ function execute(key, page) {
     let response = fetch(BASE_URL + '/modules/article/search.php', {
         method: "POST",
         body: {
-            'searchkey' : 'key', 'searchtype': 'all'
+            "searchkey={{key}}&searchtype=all"
         }
 		});
     if (response.ok) {
@@ -28,20 +28,7 @@ function execute(key, page) {
 
             return Response.success(data);
         }
-
-        // '大奉'
-        // https://www.69shu.com/modules/article/search.php?searchkey=%B4%F3%B7%EE&searchtype=all
-        //if ($.Q(doc, 'div.booknav2 > h1 > a').text()) { // detail.js
-        //return Response.success([{
-        //name: $.Q(doc, 'div.booknav2 > h1 > a').text(),
-       //link: $.Q(doc, 'div.booknav2 > h1 > a').attr('href'),
-        //cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
-        //description: $.Q(doc, 'div.booknav2 > p:nth-child(2) > a').text().trim(), // author
-        //host: BASE_URL
-        //}]);
-        //}
-
-        //return Response.error(key);
+return Response.error(key);
     }
     
     return null;
