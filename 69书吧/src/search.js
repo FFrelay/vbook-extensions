@@ -6,7 +6,6 @@ function execute(key, page) {
     console.log(JSON.stringify(token))
 
     if (!page) page = '1';
-    let url = BASE_URL+"/search/index"
     let response = fetch(BASE_URL + '/modules/article/search.php', {
         method: "POST",
         body: {
