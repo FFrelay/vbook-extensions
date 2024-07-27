@@ -1,46 +1,35 @@
-load('libs.js');
 load('config.js');
+load('search0.js');
 
 function execute(key, page) {
+    let token = getToken()
+    console.log(JSON.stringify(token))
 
+    if (!page) page = '1';
+    let url = BASE_URL+"/search/index"
     let response = fetch(BASE_URL + '/modules/article/search.php', {
         method: "POST",
         body: {
             "searchkey" : key,
 			"searchtype" : "all"
         }
-		});
+    });
     if (response.ok) {
-        let doc = response.html('gbk');
-
-        var data = [];
-
-        var elems = $.QA(doc, '.newbox li');
-        if (elems.length) {
-            elems.forEach(function(e) {
-                data.push({
+        const data = [];
+		let doc = response.html();
+        console.log(doc.html())
+        let book_list = doc.select(".result_list .book");
+        book_list.forEach(e => {
+            data.push({
                     name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
                     link: $.Q(e, '.newnav > a').attr('href'),
                     cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
                     description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
                     host: BASE_URL
-                })
-            })
-
-            return Response.success(data);
-        }
-		if ($.Q(doc, 'div.booknav2 > h1 > a').text()) { // detail.js
-            return Response.success([{
-                name: $.Q(doc, 'div.booknav2 > h1 > a').text(),
-                link: $.Q(doc, 'div.booknav2 > h1 > a').attr('href'),
-                cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
-                description: $.Q(doc, 'div.booknav2 > p:nth-child(2) > a').text().trim(), // author
-                host: BASE_URL
-            }]);
-        }
-
-        return Response.error(key);
+            });
+        });
+        var next = parseInt(page, 10) + 1;
+        return Response.success(data, next)
     }
-	
     return null;
 }
