@@ -17,7 +17,7 @@ function execute(key, page) {
         const data = [];
 		let doc = response.html();
         console.log(doc.html())
-        let book_list = doc.select(".result_list .book");
+        let book_list = doc.select(".mybox");
         book_list.forEach(e => {
             data.push({
                     name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
