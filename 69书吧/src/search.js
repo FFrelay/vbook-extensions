@@ -6,7 +6,7 @@ function execute(key, page) {
     let response = fetch(BASE_URL + '/modules/article/search.php', {
         method: "POST",
         body: {
-            "searchkey={{key}}&searchtype=all"
+            "searchkey":"key"&"searchtype"="all"
         }
 		});
     if (response.ok) {
@@ -28,8 +28,8 @@ function execute(key, page) {
 
             return Response.success(data);
         }
-return Response.error(key);
-    }
+		return Response.error(key);
+	}
     
     return null;
 }
