@@ -16,8 +16,8 @@ function execute(url, page) {
             data.push({
                 name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
                 link: $.Q(e, 'h3 > a').attr('href'),
-                cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
-                description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
+                //cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
+                description: $.Q(e, '.ellipsis_2').text(),
                 host: BASE_URL
             })
         })
