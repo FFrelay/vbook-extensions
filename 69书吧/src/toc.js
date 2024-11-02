@@ -2,11 +2,11 @@ load('libs.js');
 load('config.js');
 
 function execute(url) {
-    const regex = /\/(\d+)\.htm/;
+    const regex = /\/(\d+)\.html/;
     const match = url.match(regex);
     let book_id = match[1];
     console.log(book_id)
-    let response = fetch(BASE_URL + "/book/" + book_id +"/");
+    let response = fetch(BASE_URL + "/b/" + book_id +"/");
     if (response.ok) {
         let doc = response.html('gbk');
 
