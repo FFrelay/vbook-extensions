@@ -16,7 +16,7 @@ function execute(url, page) {
             var link = $.Q(e, 'a').attr('href');
             var m, id, cover;
 
-            if ((m = link.match(BASE_URL + /.+\/b\/(.*?)\.html/)) && m[1] && (id = m[1])) {
+            if ((m = link.match(BASE_URL + /.+\/b\/(.*?)\.htm/)) && m[1] && (id = m[1])) {
                 cover = String.format('{0}/fengmian/{1}/{2}/{3}s.jpg', "https://cdn.shucdn.com", Math.floor(id / 1000), id, id);
             }
 
