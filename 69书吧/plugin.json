@@ -2,9 +2,9 @@
   "metadata": {
     "name": "69书吧",
     "author": "FFrelay",
-    "version": 9,
-    "source": "https://69shu.cx",
-    "regexp": "(www.|m.)?(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book|b)/.*?\\.(htm|html)",
+    "version": 10,
+    "source": "https://69shuba.cx",
+    "regexp": "(www.|m.)?(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book)/.*?\\.(htm|html)",
     "description": "Đọc truyện trên trang 69书吧",
     "locale": "zh_CN",
     "language": "javascript",
