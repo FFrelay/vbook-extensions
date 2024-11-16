@@ -12,7 +12,7 @@ function execute(url) {
 
 		var data = [];
 		//var elems = $.QA(doc, 'div.catalog > ul > li > a:not(#bookcase)', {reverse : true});
-		var elems = $.QA(doc, 'div.#catalog.catalog > ul > li > a', {reverse : true});
+		var elems = $.QA(doc, 'div#catalog.catalog > ul > li > a', {reverse : true});
 		
 		elems.forEach(function(e) {
 			data.push({
