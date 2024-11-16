@@ -2,7 +2,7 @@ load('libs.js');
 load('config.js');
 
 function execute(url) {
-    const regex = /\/(\d+)\.html/;
+    const regex = /\/(\d+)\.htm/;
     const match = url.match(regex);
     let book_id = match[1];
     console.log(book_id)
