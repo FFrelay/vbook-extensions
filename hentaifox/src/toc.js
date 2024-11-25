@@ -4,11 +4,11 @@ function execute(url) {
     listChapter.push({
         name : "Read now",
         url : url,
-        host : "https://hentaifox.com"
+        host : "https://hentairox.com"
     })
 
 	return Response.success(listChapter)
 }
 
-//https://hentaifox.com/gallery/88692/
-//https://hentaifox.com/g/88692/1/
+//https://hentairox.com/gallery/88692/
+//https://hentairox.com/g/88692/1/

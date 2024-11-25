@@ -1,11 +1,11 @@
 function execute(url, page) {
     if(!page) page = "1"
-    var url = "https://hentaifox.com/"
+    var url = "https://hentairox.com/"
 	if(page!="1"){
         if(page=="2")
-            url = "https://hentaifox.com/page/2/"
+            url = "https://hentairox.com/page/2/"
         else
-            url = "https://hentaifox.com/pag/" + page + "/"
+            url = "https://hentairox.com/pag/" + page + "/"
     }
 	//var doc = Http.get(url + page + "/").html()
 
@@ -18,11 +18,11 @@ function execute(url, page) {
 		link: book.select(".caption a").attr("href"),
 		cover: book.select(".inner_thumb img").attr("src"),
 		description: "",
-		host: "https://hentaifox.com"
+		host: "https://hentairox.com"
 	}))
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();
 
     return Response.success(listBook,next)
 }
-//https://hentaifox.com/gallery/88707/
+//https://hentairox.com/gallery/88707/

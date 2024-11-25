@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "HentaiFox",
+    "name": "HentaiRox",
     "author": "FFrelay",
-    "version": 6,
-    "source": "https://hentaifox.com/",
-    "regexp": "(www.)?hentaifox.com/gallery/(\\d+)/?$",
-    "description": "Đọc truyện trên trang HentaiFox",
+    "version": 7,
+    "source": "https://hentairox.com/",
+    "regexp": "(www.)?hentairox.com/gallery/(\\d+)/?$",
+    "description": "Đọc truyện trên trang HentaiRox",
     "locale": "en-US",
     "language": "javascript",
     "type": "comic",
