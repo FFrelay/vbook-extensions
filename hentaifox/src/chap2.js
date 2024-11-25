@@ -5,9 +5,9 @@ function execute(url) {
     //----load page 1
     var newUrl = url.replace('gallery','g')
     var doc = Http.get(newUrl + "/1/").html()
-    var image = doc.select("#gimg").attr("src")
+    var image = doc.select("#gimg").attr("data-src")
     listImage.push(image)
-    var splitUrl = image.match(/(.+)(\d+)(.jpg|.jpeg|.png|.webp)/) 
+    var splitUrl = image.match(/(.+)(\d+)(.jpg|.jpeg|.png)/) 
     
     //return Response.success(doc)
     
