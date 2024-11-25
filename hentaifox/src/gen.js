@@ -6,7 +6,14 @@ function execute(url, page) {
 //            url = "https://hentairox.com/page/2/"
 //        else
 //            url = "https://hentairox.com/pag/" + page + "/"
-		var url = "https://hentairox.com/?page=" + page"
+
+    if(!page) page = "1"
+    var url = "https://hentairox.com/?page=1"
+	if(page!="1"){
+        if(page=="2")
+            url = "https://hentairox.com/?page=2"
+        else
+            url = "https://hentairox.com/?page=" + page
     }
 	//var doc = Http.get(url + page + "/").html()
 
