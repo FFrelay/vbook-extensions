@@ -4,7 +4,7 @@ function execute(url) {
     return Response.success({
         name: info.select(".gallery_right .info h1").text(),
         cover: info.select(".gallery_left .cover img").attr("src"),
-        host: "https://hentairox.com/",
+        host: "https://hentaifox.com/",
         author: info.select(".gallery_right .artists li a").text(),
         detail: doc.select(".gallery_right .info").html(),
         description: doc.select(".gallery_right .categories").html(),

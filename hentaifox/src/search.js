@@ -1,7 +1,7 @@
 function execute(key, page) {
-    //https://hentairox.com/search/?q=public&page=3
+    //https://hentaifox.com/search/?q=public&page=3
     if(!page) page="1"
-    var doc = Http.get("https://hentairox.com/search/?q="+ key +"&page=" + page).html()
+    var doc = Http.get("https://hentaifox.com/search/?q="+ key +"&page=" + page).html()
 
     if(doc){
         var books = doc.select(".lc_galleries > div")
@@ -11,7 +11,7 @@ function execute(key, page) {
             link: book.select(".caption a").attr("href"),
             cover: book.select(".inner_thumb img").attr("src"),
             description: "",
-            host: "https://hentairox.com"
+            host: "https://hentaifox.com"
         }))
         if (listBook.length == 0) next = ""; 
         else next = (parseInt(page) + 1).toString();
