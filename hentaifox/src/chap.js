@@ -36,14 +36,21 @@ function execute(url) {
             listImage.push(splitUrl[1] + i + splitUrl[3]);
         }
     } catch (error) {
-        console.log("Error loading images:", error);
+        console.log("Image load error", error);
         
-        // Fallback: use .webp if there's an error
-        listImage = [];
-        for (var i = 1; i <= totalPage; i++) {
-            listImage.push(newUrl + "/" + i + ".webp");
+        // Fallback: use .webp for splitUrl if there's an error
+        var newimage = image.replace(/\.(jpg|jpeg|png)/, '.webp');
+        var splitUrlFallback = newimage.match(/(.+)(\d+)(.webp)/);
+        
+        if (splitUrlFallback) {
+            listImage = [];
+            for (var i = 1; i <= totalPage; i++) {
+                listImage.push(splitUrlFallback[1] + i + splitUrlFallback[3]);
+            }
+        } else {
+            console.log("Fallback failed: Invalid image URL format");
         }
     }
-    
+
     return Response.success(listImage);
 }
