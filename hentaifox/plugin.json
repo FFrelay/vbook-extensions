@@ -2,7 +2,7 @@
   "metadata": {
     "name": "HentaiFox",
     "author": "FFrelay",
-    "version": 7,
+    "version": 8,
     "source": "https://hentaifox.com/",
     "regexp": "(www.)?hentaifox.com/gallery/(\\d+)/?$",
     "description": "Đọc truyện trên trang HentaiFox",

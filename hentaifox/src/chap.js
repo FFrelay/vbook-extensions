@@ -4,9 +4,9 @@ function execute(url) {
 	var totalPage = parseInt(doc.match(/load_pages.+value="(\d+)"/)[1])
 	var listImage = []
 	for(var i=1 ; i<=totalPage;i++){
-		var doc = Http.get(newUrl + "/" + i + "/").html()
-		var image = 'https:' + doc.select("#gimg").attr("src")
-		newimage = image.replace('https:https:','https:')
+		var newdoc = Http.get(newUrl + "/" + i + "/").html()
+		var image = 'https:' + newdoc.select("#gimg").attr("src")
+		var newimage = image.replace('https:https:','https:')
 		var splitUrl = newimage.match(/(.+)(\d+)(.jpg|.jpeg|.png|.webp)/)
         listImage.push(splitUrl[1] + i + splitUrl[3])
     }
