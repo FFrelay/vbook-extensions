@@ -1,8 +1,8 @@
 function execute(url) {
     var newUrl = url.replace('gallery','g')
     var doc = Http.get(newUrl + "/1/").html()
-    var image = 'http:' + doc.select("#gimg").attr("src")
-	image = image.replace('http:http:','http:')
+    var image = 'https:' + doc.select("#gimg").attr("src")
+	image = image.replace('https:https:','https:')
 	var listImage = []
     listImage.push(image)
     return Response.success(listImage)
