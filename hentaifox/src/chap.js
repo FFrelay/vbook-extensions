@@ -2,11 +2,14 @@ function execute(url) {
     var doc = Http.get(url + "/").string()
 	var newUrl = url.replace('gallery','g')
 	var totalPage = parseInt(doc.match(/load_pages.+value="(\d+)"/)[1])
-    var doc = Http.get(newUrl + "/1/").html()
-    var image = 'https:' + doc.select("#gimg").attr("src")
-	image = image.replace('https:https:','https:')
 	var listImage = []
-    listImage.push(image)
+	for(var i=1 ; i<=totalPage;i++){
+		var doc = Http.get(newUrl + "/" + i + "/").html()
+		var image = 'https:' + doc.select("#gimg").attr("src")
+		image = image.replace('https:https:','https:')
+		var splitUrl = image.match(/(.+)(\d+)(.jpg|.jpeg|.png|.webp)/)
+        listImage.push(splitUrl[1] + i + splitUrl[3])
+    }
     return Response.success(listImage)
 }
 
