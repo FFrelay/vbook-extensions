@@ -1,5 +1,6 @@
 function execute(url) {
-    var newUrl = url.replace('gallery','g')
+    var doc = Http.get(url + "/").string()
+	var newUrl = url.replace('gallery','g')
 	var totalPage = parseInt(doc.match(/load_pages.+value="(\d+)"/)[1])
     var doc = Http.get(newUrl + "/1/").html()
     var image = 'https:' + doc.select("#gimg").attr("src")
