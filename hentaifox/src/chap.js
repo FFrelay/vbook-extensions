@@ -6,20 +6,12 @@ function execute(url) {
 	for(var i=1 ; i<=totalPage;i++){
 		var doc = Http.get(newUrl + "/" + i + "/").html()
 		var image = 'https:' + doc.select("#gimg").attr("src")
-		image = image.replace('https:https:','https:')
-		var splitUrl = image.match(/(.+)(\d+)(.jpg|.jpeg|.png|.webp)/)
+		newimage = image.replace('https:https:','https:')
+		var splitUrl = newimage.match(/(.+)(\d+)(.jpg|.jpeg|.png|.webp)/)
         listImage.push(splitUrl[1] + i + splitUrl[3])
     }
     return Response.success(listImage)
 }
-
-//function execute(url) {
-//    var doc = Http.get(url + "/").html()
-//    var images = doc.select(".text-left p img")
-//    var listImage = []
-//    images.forEach(image => listImage.push(image.attr("src")))
-//    return Response.success(listImage)
-//}
 
 //function execute(url) {
 //    var doc = Http.get(url + "/").string()
