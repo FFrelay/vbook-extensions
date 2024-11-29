@@ -50,6 +50,18 @@
       "type": "comic",
       "locale": "en-US",
 	  "tag": "nsfw"
-    }
+    },
+	{
+      "name": "HentaiRox",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentairox/plugin.zip",
+      "version": 1,
+      "source": "https://hentairox.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentairox/icon.png",
+      "description": "Đọc truyện trên trang HentaiRox",
+      "type": "comic",
+      "locale": "en-US",
+	  "tag": "nsfw"
+    }	
   ]
 }
