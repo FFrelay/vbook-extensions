@@ -4,7 +4,7 @@ function execute(key, page) {
     var doc = Http.get("https://hentairox.com/search/?key="+ key +"&page=" + page).html()
 
     if(doc){
-        var books = doc.select(".lc_galleries > div")
+        var books = doc.select(".thumbs_container > div")
         var listBook = []
         books.forEach(book => listBook.push({
             name: book.select(".caption a").text(),
