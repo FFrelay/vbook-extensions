@@ -14,9 +14,9 @@ function execute(url, page) {
 	var books = doc.select(".box_thumbs > div")
 	var listBook = []
 	books.forEach(book => listBook.push({
-		name: book.select(".thumb a div.tittle").text(),
+		name: book.select(".thumb .title").text(),
 		link: book.select(".thumb a").attr("href"),
-		cover: book.select(".th_img img").attr("src"),
+		cover: book.select(".thumb .th_img img").attr("src"),
 		description: book.select(".thumb .wrap.top .category a").text(),
 		host: "https://hentaienvy.com"
 	}))

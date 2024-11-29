@@ -2,7 +2,7 @@
   "metadata": {
     "name": "HentaiEnvy",
     "author": "FFrelay",
-    "version": 3,
+    "version": 4,
     "source": "https://hentaienvy.com/",
     "regexp": "(www.)?hentaienvy.com/gallery/(\\d+)/?$",
     "description": "Đọc truyện trên trang HentaiEnvy",
@@ -10,7 +10,7 @@
     "language": "javascript",
     "type": "comic",
     "tag": "nsfw"
-  },
+  }
   "script": {
     "home": "home.js",
     "detail": "detail.js",
