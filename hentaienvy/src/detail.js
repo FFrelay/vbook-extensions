@@ -1,5 +1,5 @@
 function execute(url) {
-    var doc = Http.get(url).html()
+    var doc = Http.get(url + "/").html()
     var info = doc.select(".gallery_top")
     return Response.success({
         name: info.select(".gt_top gt_right h1").text(),
