@@ -62,6 +62,18 @@
       "type": "comic",
       "locale": "en-US",
 	  "tag": "nsfw"
+    },
+	{
+      "name": "HentaiEnvy",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaienvyplugin.zip",
+      "version": 1,
+      "source": "https://hentairox.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaienvy/icon.png",
+      "description": "Đọc truyện trên trang HentaiEnvy",
+      "type": "comic",
+      "locale": "en-US",
+	  "tag": "nsfw"
     }	
   ]
 }
