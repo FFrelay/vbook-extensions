@@ -1,7 +1,7 @@
 function execute(key, page) {
     //https://hentaienvy.com/search/?q=public&page=3
     if(!page) page="1"
-    var doc = Http.get("https://hentaienvy.com/search/?key="+ key +"&page=" + page).html()
+    var doc = Http.get("https://hentaienvy.com/search/?s_key="+ key +"&page=" + page).html()
 
     if(doc){
         var books = doc.select(".box_thumbs > div")
