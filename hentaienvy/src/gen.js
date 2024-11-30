@@ -15,7 +15,7 @@ function execute(url, page) {
 	books.forEach(book => listBook.push({
 		name: book.select(".thumb .title").text(),
 		link: book.select(".thumb a").attr("href"),
-		cover: book.select(".thumb .th_img a .lazy.preloader.entered.loaded").attr("src"),
+		cover: book.select(".thumb a .th_img img").attr("src"),
 		description: book.select(".thumb .wrap.top .category a").text(),
 		host: "https://hentaienvy.com"
 	}))
