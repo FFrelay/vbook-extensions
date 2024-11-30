@@ -1,5 +1,12 @@
 function execute(url, page) {
-    var url = "https://hentaienvy.com/?page=" + page
+    if(!page) page = "1"
+    var url = "https://hentaienvy.com/"
+	if(page!="1"){
+        if(page=="2")
+            url = "https://hentaienvy.com/?page=2"
+        else
+            url = "https://hentaienvy.com/?page=" + page
+    }
 	//var doc = Http.get(url + page + "/").html()
         
     var doc = Http.get(url).html()
