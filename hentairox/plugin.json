@@ -2,7 +2,7 @@
   "metadata": {
     "name": "HentaiRox",
     "author": "FFrelay",
-    "version": 2,
+    "version": 3,
     "source": "https://hentairox.com/",
     "regexp": "(www.)?hentairox.com/gallery/(\\d+)/?$",
     "description": "Đọc truyện trên trang HentaiRox",
