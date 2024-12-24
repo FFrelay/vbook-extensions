@@ -74,6 +74,18 @@
       "type": "comic",
       "locale": "en-US",
 	  "tag": "nsfw"
-    }	
+    },
+	{
+      "name": "Uaa",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/uaa/plugin.zip",
+      "version": 2,
+      "source": "https://hentaienvy.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/uaa/icon.png",
+      "description": "Đọc truyện trên trang Uaa",
+      "type": "chinese_novel",
+      "locale": "zh_CN",
+	  "tag": "nsfw"
+    }		
   ]
 }
