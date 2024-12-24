@@ -12,7 +12,7 @@ function execute(url) {
             name: book.select(".info_box h1").text(),
             cover: book.select(".cover").attr('src'),
             author: book.select(".info_box div").get(2).text().replace("作者：", ""),
-            description: book.select(".brief").text().replace(/\r?\n/g,"<br>"),
+            description: book.select(".detail_box").text().replace(/\r?\n|开始阅读/g,"<br>"),
             detail: detail,
             host: "https://www.uaa.com"
         });
