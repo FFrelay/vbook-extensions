@@ -17,7 +17,7 @@ function execute(url) {
 		.replace(/^第.*章.*）/, '')
         .replace('(本章完)', '')
 		.replace(/在一6.*?9.*?书.*?吧.*?<br>/, '')
-		.replace(/请.*?您.*?收藏.*?6.*?9.*?书.*?吧.*?<br>/, '')
+		.replace(/请[.].*?您.*?收藏.*?6.*?9.*?书.*?吧.*?<br>/, '')
         ;
     return Response.success(htm);
 }
