@@ -12,7 +12,7 @@ function execute(url) {
             name: $.Q(doc, 'div.booknav2 > h1 > a').text(),
             cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
             author: $.Q(doc, 'div.booknav2 > p:nth-child(3) > a').text().trim(),
-            description: $.Q(doc, 'div.navtxt > p').html(),
+            description: $.Q(doc, 'div.content > p').html(),
             detail: $.QA(doc, 'div.booknav2 p', {m: x => x.text(), j: '<br>'}),
             host: BASE_URL
         })
