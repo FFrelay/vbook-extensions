@@ -19,6 +19,7 @@ function execute(url) {
 		.replace(/在一6.*?9.*?书.*?吧.*?<br>/, '')
 		.replace(/请[.].*?您.*?收藏.*?6.*?9.*?书.*?吧.*?<br>/, '')
         .replace(/这个书最近更新在.*?六.*?九.*?书.*?吧.*?更新.*?<br>/, '')
+        .replace(/<p>.*?(6|六).*?(9|九).*?书.*?吧.*?<\/p>/, '')
         ;
     return Response.success(htm);
 }
