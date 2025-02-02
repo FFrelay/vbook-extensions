@@ -8,36 +8,12 @@
       "name": "69书吧",
       "author": "FFrelay",
       "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/plugin.zip",
-      "version": 5,
+      "version": 3,
       "source": "https://69shuba.cx",
       "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/icon.png",
       "description": "Đọc truyện trên trang 69书吧",
       "type": "chinese_novel",
       "locale": "zh_CN"
-    },
-	{
-      "name": "nhentai",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/plugin.zip",
-      "version": 6,
-      "source": "https://nhentai.net",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/nhentai/icon.png",
-      "description": "Đọc truyện trên trang nhentai",
-      "type": "comic",
-      "locale": "en-US",
-	  "tag": "nsfw"
-    },
-	{
-      "name": "E-Hentai",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/plugin.zip",
-      "version": 2,
-      "source": "https://e-hentai.org",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/e-hentai/icon.png",
-      "description": "Đọc truyện trên trang E-Hentai",
-      "type": "comic",
-      "locale": "en-US",
-	  "tag": "nsfw"
     },
 	{
       "name": "HentaiFox",
@@ -47,30 +23,6 @@
       "source": "https://hentaifox.com",
       "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaifox/icon.png",
       "description": "Đọc truyện trên trang HentaiFox",
-      "type": "comic",
-      "locale": "en-US",
-	  "tag": "nsfw"
-    },
-	{
-      "name": "HentaiRox",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentairox/plugin.zip",
-      "version": 4,
-      "source": "https://hentairox.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentairox/icon.png",
-      "description": "Đọc truyện trên trang HentaiRox",
-      "type": "comic",
-      "locale": "en-US",
-	  "tag": "nsfw"
-    },
-	{
-      "name": "HentaiEnvy",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaienvy/plugin.zip",
-      "version": 2,
-      "source": "https://hentaienvy.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaienvy/icon.png",
-      "description": "Đọc truyện trên trang HentaiEnvy",
       "type": "comic",
       "locale": "en-US",
 	  "tag": "nsfw"
