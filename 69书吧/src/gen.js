@@ -16,7 +16,7 @@ function execute(url, page) {
             data.push({
                 name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
                 link: $.Q(e, 'h3 > a').attr('href'),
-                cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
+                cover: $.Q(e, 'a.imgbox > img').attr('data-src').trim(),
                 description: $.Q(e, '.ellipsis_2').text(),
                 host: BASE_URL
             })
