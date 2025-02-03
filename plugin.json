@@ -5,13 +5,13 @@
   },
   "data": [
     {
-      "name": "69书吧",
+      "name": "69shuba",
       "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/plugin.zip",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69shuba/plugin.zip",
       "version": 6,
-      "source": "https://69shuba.cx",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69书吧/icon.png",
-      "description": "Đọc truyện trên trang 69书吧",
+      "source": "https://www.69shuba.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/69shuba/icon.png",
+      "description": "Đọc truyện trên trang 69shuba",
       "type": "chinese_novel",
       "locale": "zh_CN"
     },
