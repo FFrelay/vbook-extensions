@@ -7,7 +7,7 @@ function execute(url) {
 doc=fetch(url)
 doc=doc.text().replace(/<!--[\s\S]*?-->/g, '')
 doc=Html.parse(doc)
-json=JSON.parse(doc.select("body>script").get(0).html().replace("var g_th = $.parseJSON('", "").replace("');", ""))
+json=JSON.parse(doc.select("body>script").get(1).html().replace("var g_th = $.parseJSON('", "").replace("');", ""))
 //console.log(json.length())
 Object.entries(json).forEach(([key, value]) => {
   let domain = ".webp";  // Mặc định là ".webp"
