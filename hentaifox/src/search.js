@@ -9,7 +9,7 @@ function execute(key, page) {
         books.forEach(book => listBook.push({
             name: book.select(".caption a").text(),
             link: book.select(".caption a").attr("href"),
-            cover: book.select(".inner_thumb img").attr("src"),
+            cover: book.select(".inner_thumb a img").attr("src"),
             description: "",
             host: "https://hentaifox.com"
         }))
