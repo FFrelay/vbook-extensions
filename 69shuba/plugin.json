@@ -2,7 +2,7 @@
   "metadata": {
     "name": "69shuba",
     "author": "FFrelay",
-    "version": 1,
+    "version": 2,
     "source": "https://www.69shuba.com",
     "regexp": "(www.|m.)?(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book)/.*?\\.(htm|html)",
     "description": "Đọc truyện trên trang 69shuba",

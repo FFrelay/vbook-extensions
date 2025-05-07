@@ -9,7 +9,7 @@ function execute(url) {
     htm.select(".contentadv").remove()
     htm.select(".bottom-ad").remove()
     htm.select(".txtinfo").remove()
-    htm.select("#txtright").remove()
+    //htm.select("#txtright").remove()
     htm.select("h1").remove()
     htm = htm.html()
     htm = cleanHtml(htm)
