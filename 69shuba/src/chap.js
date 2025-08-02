@@ -14,7 +14,7 @@ function execute(url) {
     htm = htm.html()
     htm = cleanHtml(htm)
         .replace(/^第\d+章.*?<br>/, '') // Ex: '  第11745章 大结局，终<br>'
-		.replace(/^第.*章.*）/, '')
+		.replace(/^第.*章[^<br>]*）/, '')
         .replace('(本章完)', '')
         //.replace(/[^<p>]*(6|六).*?(9|九).*?书.*?吧.*?<\/p>/, '')
         ;
