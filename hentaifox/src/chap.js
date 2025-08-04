@@ -1,17 +1,16 @@
 function execute(url) {
+const regex = /var\s+g_th\s*=\s*\$\.parseJSON\(\s*'(\{[\s\S]*?\})'\s*\);/; 
     let listImage=[]
     var newUrl = url.replace('gallery','g')
     var doc = Http.get(newUrl + "/1/").html()
     var image = doc.select("#gimg").attr("data-src")
     base_url=image.replace(/\/\d+(\.\w+)$/, '')
 doc=fetch(url)
-doc=doc.text().replace(/<!--[\s\S]*?-->/g, '')
-doc=Html.parse(doc)
-json=JSON.parse(doc.select("body>script").get(1).html().replace("var g_th = $.parseJSON('", "").replace("');", ""))
-//console.log(json.length())
+//console.log(doc.text().match(regex)[1])
+//return Response.success(doc.text().match(regex)[1])
+json=JSON.parse(doc.text().match(regex)[1])
 Object.entries(json).forEach(([key, value]) => {
   let domain = ".webp";  // Mặc định là ".webp"
-  
   switch(value[0]) {
     case 'j':
       domain = ".jpg";
