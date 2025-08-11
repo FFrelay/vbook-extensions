@@ -15,6 +15,18 @@
       "type": "chinese_novel",
       "locale": "zh_CN"
     },
+    {
+      "name": "alicesw",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/alicesw/plugin.zip",
+      "version": 1,
+      "source": "https://www.alicesw.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/alicesw/icon.png",
+      "description": "Đọc truyện trên trang AlicesW",
+      "type": "chinese_novel",
+      "locale": "zh_CN",
+      "tag": "nsfw"
+    },
 	{
       "name": "HentaiFox",
       "author": "FFrelay",
