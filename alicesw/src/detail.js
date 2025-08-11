@@ -3,7 +3,6 @@ function execute(url) {
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html();
-        // console.log(doc);
         var genres = [];
         doc.select("#detail-box  td  p a").forEach(e => {
             genres.push({

@@ -1,20 +1,22 @@
 {
-    "metadata": {
-      "name": "AliceSW",
-      "author": "FFrelay",
-      "version": 1,
-      "source": "https://www.alicesw.com/",
-      "regexp": "^https?://(www\\.)?alicesw\\.com/",
-      "description": "Đọc truyện trên trang AlicesW",
-      "locale": "zh_CN",
-      "type": "chinese_novel",
-      "tag": "nsfw"
-    },
-    "script": {
-      "home": "home.js",
-      "detail": "detail.js",
-      "toc": "toc.js",
-      "chap": "chap.js",
-      "search": "search.js"
-    }
+  "metadata": {
+    "name": "alicesw",
+    "author": "FFrelay",
+    "version": 2,
+    "source": "http://alicesw.com",
+    "regexp": "(https://|http://)(www|.m)?.alicesw.com/.*?/\\d+.html",
+    "description": "Đọc truyện trên trang Alicesw",
+    "locale": "zh_CN",
+    "language": "javascript",
+    "type": "chinese_novel",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "genre": "genre.js",
+    "search": "search.js"
+  }
 }

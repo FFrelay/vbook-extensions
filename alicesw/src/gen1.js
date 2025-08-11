@@ -1,7 +1,6 @@
 load('config.js');
-function execute(url, page) {
-    if (!page) page = 1;
-    let response = fetch(BASE_URL + url + "?page=" + page);
+function execute(url) {
+    let response = fetch(BASE_URL + url);
     if (response.ok) {
         let doc = response.html();
         const data = [];
@@ -14,8 +13,7 @@ function execute(url, page) {
                 host: BASE_URL
             })
         });
-        let next = parseInt(page) + 1;
-        return Response.success(data, next)
+        return Response.success(data)
     }
     return null;
 }
