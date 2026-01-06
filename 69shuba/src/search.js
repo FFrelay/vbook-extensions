@@ -10,7 +10,7 @@ function execute(key, page) {
         method: "POST",
         body: {
             "searchkey" : key,
-			"searchtype" : "all"
+			"submit" : "Search"
         }
     });
     if (response.ok) {
@@ -23,7 +23,7 @@ function execute(key, page) {
                     name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
                     link: $.Q(e, '.newnav > a').attr('href'),
                     cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
-                    description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
+                    description: $.Q(e, '.newnav > ol.ellipsis_2').text(),
                     host: BASE_URL
             });
         });
