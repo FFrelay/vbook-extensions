@@ -1,34 +1,34 @@
+load('libs.js');
 load('config.js');
-load('search0.js');
 
 function execute(key, page) {
-    let token = getToken()
-    console.log(JSON.stringify(token))
-
     if (!page) page = '1';
+    
     let response = fetch(BASE_URL + '/modules/article/search.php', {
         method: "POST",
-        body: {
-            "searchkey" : key,
-			"submit" : "Search"
-        }
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "searchkey=" + encodeURIComponent(key) + "&submit=Search"
     });
+    
     if (response.ok) {
         const data = [];
-		let doc = response.html();
-        console.log(doc.html())
+        let doc = response.html();
         let book_list = doc.select(".mybox");
-        book_list.forEach(e => {
+        
+        book_list.forEach(function(e) {
             data.push({
-                    name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
-                    link: $.Q(e, '.newnav > a').attr('href'),
-                    cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
-                    description: $.Q(e, '.newnav > ol.ellipsis_2').text(),
-                    host: BASE_URL
+                name: $.Q(e, '.newnav h3 > a:not([class])').text().trim(),
+                link: $.Q(e, '.newnav > a').attr('href'),
+                cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
+                description: $.Q(e, '.newnav > ol.ellipsis_2').text(),
+                host: BASE_URL
             });
         });
-        var next = parseInt(page, 10) + 1;
-        return Response.success(data, next)
+        
+        let nextPage = String(parseInt(page) + 1);
+        return Response.success(data, nextPage);
     }
-    return null;
+    return Response.error("Tìm kiếm thất bại");
 }
