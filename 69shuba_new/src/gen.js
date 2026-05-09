@@ -1,20 +1,23 @@
 load('libs.js');
 load('config.js');
-
 function execute(url, page) {
     page = page || '1';
-    url = String.format(BASE_URL + url, page);
-    console.log(url);
-    let response = fetch(url);
+    
+    // Check if the URL template supports pagination via {0}
+    var hasPagination = url.indexOf('{0}') !== -1;
+    var targetUrl = hasPagination ? String.format(BASE_URL + url, page) : (BASE_URL + url);
+
+    console.log(targetUrl);
+    let response = fetch(targetUrl);
     if (response.ok) {
         let doc = response.html('gbk');
         var data = [];
         var elems = $.QA(doc, '#article_list_content li');
-        if (!elems.length) return Response.error(url);
+        if (!elems.length) return Response.error(targetUrl);
+        
         elems.forEach(function (e) {
             var link = $.Q(e, 'h3 > a').attr('href'); // /book/88644.htm
             var m, id, cover;
-
             if ((m = link.match(/\/(?:book|b)\/(\d+)\.htm/)) && m[1]) {
                 id = m[1];
                 cover = String.format('{0}/files/article/image/{1}/{2}/{3}s.jpg',
@@ -33,8 +36,14 @@ function execute(url, page) {
                 host: BASE_URL
             });
         });
-        var next = parseInt(page, 10) + 1;
-        return Response.success(data, next.toString());
+
+        // Only return a next page token if the URL actually supports pagination
+        if (hasPagination) {
+            var next = parseInt(page, 10) + 1;
+            return Response.success(data, next.toString());
+        }
+        // Return null for next to signal the app to stop paginating
+        return Response.success(data, null);
     }
     return null;
 }
