@@ -25,18 +25,6 @@
       "description": "Đọc truyện trên trang 69shuba",
       "type": "chinese_novel",
       "locale": "zh_CN"
-    },
-	{
-      "name": "HentaiFox",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaifox/plugin.zip",
-      "version": 3,
-      "source": "https://hentaifox.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/hentaifox/icon.png",
-      "description": "Đọc truyện trên trang HentaiFox",
-      "type": "comic",
-      "locale": "en-US",
-	  "tag": "nsfw"
-    }	
+    }
   ]
 }
