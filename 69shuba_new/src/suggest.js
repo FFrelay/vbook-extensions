@@ -1,12 +1,21 @@
 load("config.js");
 
 function execute(input, page) {
-    let response = fetch(BASE_URL+input);
+    // Validate input
+    if (!input) {
+        return null;
+    }
+
+    let response = fetch(BASE_URL + input);
     if (response.ok) {
         let doc = response.html();
         let booksList = doc.select(".mybox .newbox ul li");
         console.log(booksList);
-        let next = doc.select(".next").first().attr("href")
+        
+        // Null check before accessing element
+        let nextElement = doc.select(".next").first();
+        let next = nextElement && nextElement.attr ? nextElement.attr("href") : null;
+        
         let books = [];
         booksList.forEach(book => {
             books.push({
@@ -14,7 +23,7 @@ function execute(input, page) {
                 link: book.select(".newnav h3 a").attr("href"),
                 cover: book.select("img").attr("data-src"),
                 description: book.select(".ellipsis_2").text().trim(),
-                host: BASE_URL // Ensure BASE_URL is defined
+                host: BASE_URL
             });
         });
         return Response.success(books, next);

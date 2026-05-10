@@ -1,20 +1,25 @@
 load('libs.js');
 load('config.js');
+load('gbk.js'); // Load once at the top to avoid memory leak
 
 function execute(url) {
-    var gbkEncode = function (s) {
-        load('gbk.js');
-        return GBK.encode(s);
+    // Validate input
+    if (!url) {
+        return null;
     }
 
-    // Chuẩn hoá URL
-    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
+    // Normalize URL - fix regex flag from /img to /i
+    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/i, BASE_URL);
     url = url.replace("/c/", "/b/");
     url = url.replace("/txt/", "/book/");
 
-    // Lấy ID truyện
+    // Extract book ID with null check
     const regex_id = /\/(\d+)\.(htm|html)/;
-    let book_id = url.match(regex_id)[1];
+    const match = url.match(regex_id);
+    if (!match || !match[1]) {
+        return null;
+    }
+    let book_id = match[1];
 
     let response = fetch(url);
     if (response.ok) {
@@ -27,7 +32,7 @@ function execute(url) {
         let status = doc.select('meta[property="og:novel:status"]').attr("content") || "";
         let updateTime = (doc.select('meta[property="og:novel:update_time"]').attr("content") || "").replace(/\d\d:\d\d:\d\d/g, "");
 
-        // ✅ Dựng cover đúng domain static
+        // Build cover with correct domain static
         let cover = String.format(
             '{0}/files/article/image/{1}/{2}/{2}s.jpg',
             CDN_URL,
@@ -44,13 +49,13 @@ function execute(url) {
                     "Tình trạng: " + status + '<br>' +
                     "Mới nhất: " + newChap + '<br>' +
                     "Thời gian cập nhật: " + updateTime,
-                    suggests: [
-                        {
-                            title: "Cùng tác giả",
-                            input: "/modules/article/author.php?author=" + gbkEncode(author),
-                            script:"suggest.js"
-                        }
-                    ],
+            suggests: [
+                {
+                    title: "Cùng tác giả",
+                    input: "/modules/article/author.php?author=" + GBK.encode(author),
+                    script: "suggest.js"
+                }
+            ],
             host: BASE_URL
         });
     }

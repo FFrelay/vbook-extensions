@@ -2,11 +2,23 @@ load('libs.js');
 load('config.js');
 
 function execute(url) {
+    // Validate input
+    if (!url) {
+        return null;
+    }
+
     const regex = /\/(\d+)\.(html|htm)/;
     const match = url.match(regex);
+    
+    if (!match || !match[1]) {
+        return null;
+    }
+
     let book_id = match[1];
-    let response = fetch(BASE_URL + "/book/" + book_id + "/");
-    console.log(BASE_URL + "/book/" + book_id + "/")
+    let fetchUrl = BASE_URL + "/book/" + book_id + "/";
+    console.log(fetchUrl);
+    
+    let response = fetch(fetchUrl);
     if (response.ok) {
         let doc = response.html('gbk');
         var data = [];
@@ -16,13 +28,14 @@ function execute(url) {
                 name: formatName(e.text()),
                 url: e.attr('href'),
                 host: BASE_URL
-            })
+            });
         });
         data = data.reverse();
         return Response.success(data);
     }
     return null;
 }
+
 // "63.第63章 无上极境，诸神共鸣" --> "第63章 无上极境，诸神共鸣"
 function formatName(name) {
     var re = /^(\d+)\.第(\d+)章/;

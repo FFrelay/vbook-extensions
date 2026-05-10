@@ -2,6 +2,11 @@ load('libs.js');
 load('config.js');
 
 function execute(url, page) {
+    // Validate input
+    if (!url) {
+        return Response.error('Invalid URL');
+    }
+
     page = page || '1';
     
     // Check if the URL template supports pagination via {0}
@@ -17,7 +22,11 @@ function execute(url, page) {
         if (!elems.length) return Response.error(targetUrl);
         
         elems.forEach(function (e) {
-            var link = $.Q(e, 'h3 > a').attr('href'); // /book/88644.htm
+            var link = $.Q(e, 'h3 > a').attr('href');
+            
+            // Null check for link
+            if (!link) return;
+            
             var m, id, cover;
             if ((m = link.match(/\/(?:book|b)\/(\d+)\.htm/)) && m[1]) {
                 id = m[1];

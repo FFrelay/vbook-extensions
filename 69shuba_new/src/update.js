@@ -2,6 +2,11 @@ load('libs.js');
 load('config.js');
 
 function execute(url, page) {
+    // Validate input
+    if (!url) {
+        return Response.error('Invalid URL');
+    }
+
     url = BASE_URL + url;
     let response = fetch(url);
     if (response.ok) {
@@ -9,11 +14,16 @@ function execute(url, page) {
         var data = [];
         var elems = $.QA(doc, 'div.recentupdate2 > ul > li');
         if (!elems.length) return Response.error(url);
+        
         elems.forEach(function(e) {
-            var link = $.Q(e, 'a').attr('href'); // ex: /book/88644.htm
+            var link = $.Q(e, 'a').attr('href');
+            
+            // Null check for link
+            if (!link) return;
+            
             var m, id, cover;
 
-            // ✅ Tách id từ link chi tiết
+            // Extract ID from detail link
             if ((m = link.match(/\/(?:book|b)\/(\d+)\.htm/)) && m[1]) {
                 id = m[1];
                 cover = String.format('{0}/files/article/image/{1}/{2}/{3}s.jpg',

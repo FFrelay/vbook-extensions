@@ -1,19 +1,19 @@
 load('libs.js');
 load('config.js');
+load('gbk.js'); // Load once at the top to avoid memory leak
 
 function execute(key, page) {
-
-
-    // gb18030, gbk uri encode
-    // '打更人' --> '%B4%F2%B8%FC%C8%CB'
-    // https://www.69shu.com/modules/article/search.php?searchkey=%B4%F2%B8%FC%C8%CB&searchtype=all
-    var gbkEncode = function(s) {
-        load('gbk.js');
-        return GBK.encode(s);
+    // Validate input
+    if (!key) {
+        return Response.error('Invalid search key');
     }
 
-    var url = String.format('{0}/modules/article/search.php?searchkey={1}&searchtype=all', host, gbkEncode(key));
-    // log(url);
+    // GBK URI encode: '打更人' --> '%B4%F2%B8%FC%C8%CB'
+    // https://www.69shu.com/modules/article/search.php?searchkey=%B4%F2%B8%FC%C8%CB&searchtype=all
+    var url = String.format('{0}/modules/article/search.php?searchkey={1}&searchtype=all', 
+        BASE_URL, 
+        GBK.encode(key)
+    );
 
     let response = fetch(url);
     if (response.ok) {
@@ -30,20 +30,21 @@ function execute(key, page) {
                     cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
                     description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
                     host: BASE_URL
-                })
-            })
+                });
+            });
 
             return Response.success(data);
         }
 
-        // '大奉'
+        // Single result case - '大奉'
         // https://www.69shu.com/modules/article/search.php?searchkey=%B4%F3%B7%EE&searchtype=all
-        if ($.Q(doc, 'div.booknav2 > h1 > a').text()) { // detail.js
+        var titleElement = $.Q(doc, 'div.booknav2 > h1 > a');
+        if (titleElement && titleElement.text()) {
             return Response.success([{
-                name: $.Q(doc, 'div.booknav2 > h1 > a').text(),
-                link: $.Q(doc, 'div.booknav2 > h1 > a').attr('href'),
+                name: titleElement.text(),
+                link: titleElement.attr('href'),
                 cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
-                description: $.Q(doc, 'div.booknav2 > p:nth-child(2) > a').text().trim(), // author
+                description: $.Q(doc, 'div.booknav2 > p:nth-child(2) > a').text().trim(),
                 host: BASE_URL
             }]);
         }
