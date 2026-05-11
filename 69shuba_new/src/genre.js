@@ -13,7 +13,7 @@ function execute() {
         result.push({
             title: e.text(),
             input: `/${e.text()}/`,
-            script: "gen.js"
+            script: "gen2.js"
         });
     });
     return Response.success(result);
