@@ -11,7 +11,7 @@ vbook-extensions/
 │   ├── .env             # Config: author, VBOOK_IPS, VBOOK_PORT, GITHUB_REPO
 │   ├── context/         # Detailed docs (read per task)
 │   └── vbook-mcp-server.js  # MCP server for AI agent tool calling
-├── 69shuba/             # Example extension (chinese_novel)
+├── extensions/69shuba/             # Example extension (chinese_novel)
 └── <name>/              # Other extensions live at root level (not extensions/<name>)
 ```
 
