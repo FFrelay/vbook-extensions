@@ -1,6 +1,7 @@
 load("config.js");
 
 function execute(url) {
+    url = normalizeUrl(url);
     url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load chapter");
