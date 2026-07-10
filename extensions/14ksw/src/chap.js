@@ -1,8 +1,8 @@
 load("config.js");
 
 function execute(url) {
-    url = normalizeUrl(url);
     url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
+    url = url.replace(/\/(\d+)\/(\d+)\/(\d+)\.html/, "/xiaoshuo/$2/$3.html");
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load chapter");
     var doc = response.html();

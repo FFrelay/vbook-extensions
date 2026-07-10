@@ -1,8 +1,9 @@
 load("config.js");
 
 function execute(url) {
-    url = normalizeUrl(url);
+    if (!url) return null;
     url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
+    url = url.replace(/\/(\d+)\/(\d+)\/$/, "/book/$2/");
     if (url.slice(-1) === "/") url = url.slice(0, -1);
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load detail page");
@@ -18,7 +19,7 @@ function execute(url) {
     if (!cover) {
         cover = doc.select("#fmimg img").attr("src") + "";
     }
-    if (cover && cover.startsWith("//")) cover = "https:" + cover;
+    if (cover && cover.indexOf("//") === 0) cover = "https:" + cover;
     var ongoing = true;
     if (status.indexOf("完结") >= 0 || status.indexOf("Full") >= 0) {
         ongoing = false;

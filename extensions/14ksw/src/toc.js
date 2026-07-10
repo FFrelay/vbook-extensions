@@ -1,10 +1,11 @@
 load("config.js");
 
 function execute(url) {
-    url = normalizeUrl(url);
-    url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
-    if (url.slice(-1) === "/") url = url.slice(0, -1);
-    var response = fetch(url);
+    if (!url) return null;
+    var bookId = url.match(/\/(\d+)(?:\/|\.html|\.htm)/);
+    if (!bookId) return Response.error("Invalid URL");
+    var fetchUrl = BASE_URL + "/book/" + bookId[1] + "/";
+    var response = fetch(fetchUrl);
     if (!response.ok) return Response.error("Cannot load TOC");
     var doc = response.html();
     var chapters = [];
