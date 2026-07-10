@@ -1,7 +1,6 @@
 load("config.js");
 
 function execute(url) {
-    url = url.replace(/www\.14ksw/, "m.14ksw");
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load chapter");
     var doc = response.html();
