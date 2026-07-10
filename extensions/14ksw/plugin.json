@@ -4,7 +4,7 @@
     "author": "FFrelay",
     "version": 1,
     "source": "https://m.14ksw.com",
-    "regexp": "(?:(?:www|m)\\.)?14ksw\\.com/\\d+/\\d+(?!\\.html)",
+    "regexp": "m\\.14ksw\\.com/\\d+/\\d+(?!\\.html)",
     "description": "Đọc truyện trên trang 14ksw",
     "locale": "zh_CN",
     "language": "javascript",
