@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "14ksw",
+    "author": "FFrelay",
+    "version": 2,
+    "source": "https://m.14ksw.com",
+    "regexp": "https?:\\/\\/m\\.14ksw\\.com\\/\\d+\\/\\d+",
+    "description": "Đọc truyện trên trang 14ksw",
+    "locale": "zh_CN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "gen": "gen.js",
+    "detail": "detail.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
