@@ -1,13 +1,12 @@
 load("config.js");
 
 function execute(url) {
-    url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
-    url = url.replace(/\/(\d+)\/(\d+)\/(\d+)\.html/, "/xiaoshuo/$2/$3.html");
+    url = url.replace(/www\.14ksw/, "m.14ksw");
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load chapter");
     var doc = response.html();
-    doc.select("script, style, noscript, iframe, .ads, .advertisement").remove();
-    var content = doc.select("#content").html() + "";
+    doc.select("script, style, noscript, iframe").remove();
+    var content = doc.select("#nr").html() + "";
     if (!content) return Response.error("Chapter content not found");
     return Response.success(content);
 }

@@ -2,9 +2,8 @@ load("config.js");
 
 function execute(url) {
     if (!url) return null;
-    url = url.replace(/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/, BASE_URL);
-    url = url.replace(/\/(\d+)\/(\d+)\/$/, "/book/$2/");
-    if (url.slice(-1) === "/") url = url.slice(0, -1);
+    url = url.replace(/www\.14ksw/, "m.14ksw");
+    url = url.replace(/_/g, "/");
     var response = fetch(url);
     if (!response.ok) return Response.error("Cannot load detail page");
     var doc = response.html();
@@ -15,20 +14,19 @@ function execute(url) {
     var status = doc.select("meta[property=\"og:novel:status\"]").attr("content") + "";
     var updateTime = doc.select("meta[property=\"og:novel:update_time\"]").attr("content") + "";
     var newChap = doc.select("meta[property=\"og:novel:latest_chapter_name\"]").attr("content") + "";
-    var description = doc.select("#intro").html() + "";
-    if (!cover) {
-        cover = doc.select("#fmimg img").attr("src") + "";
-    }
+    var description = doc.select(".intro_info").text() + "";
+    var idx = description.indexOf("\u63a8\u8350\u5730\u5740");
+    if (idx > 0) description = description.substring(0, idx);
     if (cover && cover.indexOf("//") === 0) cover = "https:" + cover;
     var ongoing = true;
     if (status.indexOf("完结") >= 0 || status.indexOf("Full") >= 0) {
         ongoing = false;
     }
     var detail = "";
-    if (category) detail += "Thể loại: " + category;
-    if (status) detail += "<br>Tình trạng: " + status;
-    if (newChap) detail += "<br>Mới nhất: " + newChap;
-    if (updateTime) detail += "<br>Cập nhật: " + updateTime;
+    if (category) detail += "Th\u1ec3 lo\u1ea1i: " + category;
+    if (status) detail += "<br>T\xecnh tr\u1ea1ng: " + status;
+    if (newChap) detail += "<br>M\u1edbi nh\u1ea5t: " + newChap;
+    if (updateTime) detail += "<br>C\u1eadp nh\u1eadt: " + updateTime;
     return Response.success({
         name: name,
         cover: cover,

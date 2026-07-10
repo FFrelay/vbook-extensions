@@ -1,16 +1,12 @@
 load("config.js");
 
 function execute(url) {
-    if (!url) return null;
-    var bookId = url.match(/\/(\d+)(?:\/|\.html|\.htm)/);
-    if (!bookId) return Response.error("Invalid URL");
-    var fetchUrl = BASE_URL + "/book/" + bookId[1] + "/";
-    var response = fetch(fetchUrl);
-    if (!response.ok) return Response.error("Cannot load TOC");
+    var response = fetch(url);
+    if (!response.ok) return Response.error("Cannot load TOC: " + url);
     var doc = response.html();
     var chapters = [];
-    doc.select("#list dl dd a").forEach(function(el) {
-        var name = el.attr("title") + "";
+    doc.select("#ul_all_chapters li a").forEach(function(el) {
+        var name = el.text() + "";
         var chapUrl = el.attr("href") + "";
         if (!name || !chapUrl) return;
         if (chapUrl.indexOf("http") !== 0) {
@@ -22,6 +18,6 @@ function execute(url) {
             host: BASE_URL
         });
     });
-    if (chapters.length === 0) return Response.error("No chapters found");
+    if (chapters.length === 0) return Response.success([]);
     return Response.success(chapters);
 }

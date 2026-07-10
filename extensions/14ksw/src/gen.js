@@ -8,11 +8,11 @@ function execute(url, page) {
     if (!response.ok) return Response.error("Cannot load: " + targetUrl);
     var doc = response.html();
     var data = [];
-    doc.select(".item").forEach(function(el) {
-        var name = el.select("dt a").text() + "";
-        var link = el.select("dt a").attr("href") + "";
-        var cover = el.select(".image img").attr("src") + "";
-        var author = el.select("dt span").text() + "";
+    doc.select(".list.fk ul.xbk").forEach(function(el) {
+        var name = el.select(".xsm a").text() + "";
+        var link = el.select(".xsm a").attr("href") + "";
+        var cover = el.select(".tjimg img").attr("src") + "";
+        var author = el.select(".tjxs span").get(1).text() + "";
         if (link && link.indexOf("http") !== 0) {
             link = link.indexOf("/") === 0 ? BASE_URL + link : BASE_URL + "/" + link;
         }
