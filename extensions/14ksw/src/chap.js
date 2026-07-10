@@ -10,5 +10,7 @@ function execute(url) {
         return Response.error("Không tìm thấy nội dung chương");
     }
     content = content.replace(/&nbsp;/g, " ");
+    content = content.replace(/[\uFF41-\uFF5A\uFF21-\uFF3A][\uFF41-\uFF5A\uFF21-\uFF3Aa-zA-Z0-9|^$~*+\-!.#@\/\\]{5,}[\uFF41-\uFF5A\uFF21-\uFF3Aa-zA-Z0-9]/g, "");
+    content = content.replace(/：(?=[‘"'"])/g, "：</p>");
     return Response.success(content);
 }
