@@ -13,6 +13,6 @@ function execute(url) {
     content = content.replace(/[\uFF41-\uFF5A\uFF21-\uFF3A]+[^\u4E00-\u9FFF\u3000-\u303F\s<>\/]{5,}[\uFF41-\uFF5A\uFF21-\uFF3A\w]+/g, "");
     content = content.replace(/：(?=[‘“])/g, "：</p>");
 	content = content.replace(/‘‘/g, "“");
-	content = content.replace(/^第\d+章.*?<p>/g, "<p>");
+	content = content.replace(/^第\d+章.*?\n/g, "");
     return Response.success(content);
 }
