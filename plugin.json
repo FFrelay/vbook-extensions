@@ -25,6 +25,17 @@
       "description": "Đọc truyện trên trang 14ksw",
       "type": "chinese_novel",
       "locale": "zh_CN"
+    },
+    {
+      "name": "sto66",
+      "author": "FFrelay",
+      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/plugin.zip",
+      "version": 1,
+      "source": "https://www.sto66.com",
+      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/icon.png",
+      "description": "Đọc truyện trên trang sto66 (思兔阅读)",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
     }
   ]
 }

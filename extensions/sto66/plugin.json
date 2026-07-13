@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "sto66",
+    "author": "FFrelay",
+    "version": 1,
+    "source": "https://www.sto66.com",
+    "regexp": "https?:\\/\\/(?:www\\.)?sto66\\.com\\/book\\/[a-zA-Z0-9]+\\.html",
+    "description": "Đọc truyện trên trang sto66 (思兔阅读)",
+    "locale": "zh_CN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "search": "search.js"
+  }
+}
