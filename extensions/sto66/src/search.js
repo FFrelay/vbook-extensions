@@ -1,6 +1,12 @@
 load("config.js");
 function execute(key, page) {
-    var url = BASE_URL + "/search?searchkey=" + encodeURIComponent(key);
+    page = page || "1";
+    var url;
+    if (page == "1") {
+        url = BASE_URL + "/search?searchkey=" + encodeURIComponent(key);
+    } else {
+        url = BASE_URL + "/search/" + key + "/" + page + ".html";
+    }
     var response = fetch(url);
     if (response.ok) {
         var doc = response.html();
@@ -12,11 +18,8 @@ function execute(key, page) {
                 var nameElem = item.select("h2.bookname a");
                 var link = nameElem.attr("href") + "";
                 var name = nameElem.text() + "";
-                var author = "";
                 var authorElem = item.select("div.author").first();
-                if (authorElem) {
-                    author = authorElem.text() + "";
-                }
+                var author = authorElem ? (authorElem.text() + "") : "";
                 if (link && name) {
                     data.push({
                         name: name,
@@ -26,7 +29,8 @@ function execute(key, page) {
                     });
                 }
             }
-            return Response.success(data);
+            var nextLink = doc.select(".pagelink a.next");
+            return Response.success(data, nextLink.size() > 0 ? String(Number(page) + 1) : null);
         }
         var titleElem = doc.select("h1.booktitle");
         if (titleElem.size() > 0) {
