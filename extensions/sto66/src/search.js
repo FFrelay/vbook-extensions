@@ -4,30 +4,41 @@ function execute(key, page) {
     var response = fetch(url);
     if (response.ok) {
         var doc = response.html();
-        var data = [];
-        var items = doc.select("#fengtui .item, .content-left .item");
-        if (!items.size()) {
-            items = doc.select(".bookinfo, .book");
-        }
-        var elems = doc.select(".item");
-        for (var i = 0; i < elems.size(); i++) {
-            var e = elems.get(i);
-            var link = e.select(".image a").attr("href") + "";
-            var name = "";
-            name = e.select("dl dt a").text() + "";
-            var cover = e.select(".image a img").attr("src") + "";
-            var author = e.select("dl dt a span").text() + "";
-            if (link && link.indexOf("/book/") >= 0) {
-                data.push({
-                    name: name,
-                    link: link,
-                    cover: cover,
-                    author: author,
-                    host: BASE_URL
-                });
+        var items = doc.select("div.bookbox");
+        if (items.size() > 0) {
+            var data = [];
+            for (var i = 0; i < items.size(); i++) {
+                var item = items.get(i);
+                var nameElem = item.select("h2.bookname a");
+                var link = nameElem.attr("href") + "";
+                var name = nameElem.text() + "";
+                var author = "";
+                var authorElem = item.select("div.author").first();
+                if (authorElem) {
+                    author = authorElem.text() + "";
+                }
+                if (link && name) {
+                    data.push({
+                        name: name,
+                        link: link,
+                        author: author,
+                        host: BASE_URL
+                    });
+                }
             }
+            return Response.success(data);
         }
-        return Response.success(data);
+        var titleElem = doc.select("h1.booktitle");
+        if (titleElem.size() > 0) {
+            var author = doc.select(".booktag a.red").text() + "";
+            return Response.success([{
+                name: titleElem.text() + "",
+                link: response.url + "",
+                author: author,
+                host: BASE_URL
+            }]);
+        }
+        return Response.success([]);
     }
     return null;
 }
