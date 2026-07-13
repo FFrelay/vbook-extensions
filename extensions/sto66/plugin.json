@@ -2,7 +2,7 @@
   "metadata": {
     "name": "sto66",
     "author": "FFrelay",
-    "version": 5,
+    "version": 6,
     "source": "https://www.sto66.com",
     "regexp": "https?:\\/\\/(?:www\\.)?sto66\\.com\\/book\\/[a-zA-Z0-9]+\\.html",
     "description": "Đọc truyện trên trang sto66 (思兔阅读)",
@@ -16,6 +16,7 @@
     "page": "page.js",
     "toc": "toc.js",
     "chap": "chap.js",
-    "search": "search.js"
+    "search": "search.js",
+	"genre": "gen.js"
   }
 }

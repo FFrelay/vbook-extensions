@@ -3,7 +3,7 @@ function execute(key, page) {
     page = page || "1";
     var url;
     if (page == "1") {
-        url = BASE_URL + "/search?searchkey=" + encodeURIComponent(key);
+        url = BASE_URL + "/search/" + key + ".html";
     } else {
         url = BASE_URL + "/search/" + key + "/" + page + ".html";
     }

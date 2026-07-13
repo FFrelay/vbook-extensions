@@ -12,7 +12,7 @@
   },
   "script": {
     "home": "home.js",
-    "gen": "gen.js",
+    "genre": "gen.js",
     "detail": "detail.js",
     "page": "page.js",
     "toc": "toc.js",
