@@ -5,6 +5,9 @@ function execute(url) {
     if (response.ok) {
         var doc = response.html();
         var htm = doc.select("#content.readcontent").html() + "";
+        htm = htm.replace(/：“/g, "：</p><p>“");
+        htm = htm.replace(/：‘/g, "：</p><p>‘");
+        htm = htm.replace(/·{3}/g, "…");
         return Response.success(htm);
     }
     return null;
