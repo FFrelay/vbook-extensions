@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "DEMO_NOVEL",
+    "author": "TODO_AUTHOR",
+    "version": 1,
+    "source": "https://TODO_DOMAIN.net",
+    "regexp": "https?:\\/\\/(?:www\\\\.)?TODO_DOMAIN\\\\.net\\/truyen\\/[a-zA-Z0-9-]+\\\/?$",
+    "description": "Demo novel extension template",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
