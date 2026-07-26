@@ -2,9 +2,9 @@
   "metadata": {
     "name": "guanshuya",
     "author": "FFrelay",
-    "version": 2,
+    "version": 3,
     "source": "https://m.guanshuya.net",
-    "regexp": "m\\.guanshuya\\.net/html/\\d+/\\d+/$",
+    "regexp": "https?:\\/\\/m\\.guanshuya\\.net\\/html\\/\\d+\\/\\d+\\/$",
     "description": "guanshuya - Tiểu thuyết Trung Quốc",
     "locale": "zh_CN",
     "language": "javascript",
