@@ -1,0 +1,475 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - link [ref=f3e4] [cursor=pointer]:
+      - /url: /
+      - text: 官术网
+      - paragraph [ref=f3e5]: www.guanshuya.net
+    - link "会员书架" [ref=f3e6] [cursor=pointer]:
+      - /url: /user/login.php
+    - generic [ref=f3e8]:
+      - textbox "可搜书名，请您少字也别输错字" [ref=f3e9]
+      - button "搜 索" [ref=f3e10] [cursor=pointer]
+  - generic [ref=f3e11]:
+    - list:
+      - listitem [ref=f3e12]:
+        - link "首页" [ref=f3e13] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f3e14]:
+        - link "热门" [ref=f3e15] [cursor=pointer]:
+          - /url: /top.html
+      - listitem [ref=f3e16]:
+        - link "玄幻" [ref=f3e17] [cursor=pointer]:
+          - /url: /class1-1.html
+      - listitem [ref=f3e18]:
+        - link "武侠" [ref=f3e19] [cursor=pointer]:
+          - /url: /class2-1.html
+      - listitem [ref=f3e20]:
+        - link "都市" [ref=f3e21] [cursor=pointer]:
+          - /url: /class3-1.html
+      - listitem [ref=f3e22]:
+        - link "历史" [ref=f3e23] [cursor=pointer]:
+          - /url: /class4-1.html
+      - listitem [ref=f3e24]:
+        - link "科幻" [ref=f3e25] [cursor=pointer]:
+          - /url: /class5-1.html
+      - listitem [ref=f3e26]:
+        - link "网游" [ref=f3e27] [cursor=pointer]:
+          - /url: /class6-1.html
+      - listitem [ref=f3e28]:
+        - link "女生" [ref=f3e29] [cursor=pointer]:
+          - /url: /class7-1.html
+      - listitem [ref=f3e30]:
+        - link "记录" [ref=f3e31] [cursor=pointer]:
+          - /url: /dll.html
+  - generic [ref=f3e32]:
+    - generic [ref=f3e33]:
+      - link "首页" [ref=f3e34] [cursor=pointer]:
+        - /url: /
+      - text: ">"
+      - link "武侠仙侠" [ref=f3e35] [cursor=pointer]:
+        - /url: /class2-1.html
+      - text: ">玄鉴仙族"
+    - generic [ref=f3e36]:
+      - img "玄鉴仙族" [ref=f3e41]
+      - generic [ref=f3e42]:
+        - heading "玄鉴仙族" [level=1] [ref=f3e43]
+        - paragraph [ref=f3e44]:
+          - text: 作者：
+          - link "季越人" [ref=f3e45] [cursor=pointer]:
+            - /url: /author/161429/
+        - paragraph [ref=f3e46]: 0读过 |0|3223万字 |连载
+        - paragraph [ref=f3e47]:
+          - text: 最新章节：
+          - link "说明and请假一日" [ref=f3e48] [cursor=pointer]:
+            - /url: /html/161/161429/24507876.html
+        - paragraph [ref=f3e49]: 最后更新：2026-07-26 20:00:36
+      - generic [ref=f3e50]: 小说简介： 陆江仙熬夜猝死，残魂却附在了一面满是裂痕的青灰色铜镜上，飘落到了浩瀚无垠的修仙世界。 凶险难测的大黎山，眉尺河旁小小的村落，一个小家族拾到了这枚镜子，于是传仙道授仙法，开启波澜壮阔的新时代。 (家族修仙，不圣母，种田，无系统，群像文)
+      - generic [ref=f3e51]:
+        - link "开始阅读" [ref=f3e52] [cursor=pointer]:
+          - /url: /html/161/161429/17784655.html
+        - link "章节目录" [ref=f3e53] [cursor=pointer]:
+          - /url: /html/161/161429/
+        - link "加入书架" [ref=f3e54] [cursor=pointer]:
+          - /url: javascript:addBookCase(161429,'玄鉴仙族');
+    - definition [ref=f3e56]:
+      - generic [ref=f3e57]: 通知：以后所有免费在线网站都会关闭，请下载小说app客户端阅读最新章节
+      - generic [ref=f3e58]: 立即下载
+    - generic [ref=f3e61]:
+      - text: 相关：
+      - link "洛长安帝千傲小说免费阅读完整版" [ref=f3e62] [cursor=pointer]:
+        - /url: /html/65/65536/
+      - text: 、
+      - link "四合院：我有旅行家禽" [ref=f3e63] [cursor=pointer]:
+        - /url: /html/131/131072/
+      - text: 、
+      - link "医道官途" [ref=f3e64] [cursor=pointer]:
+        - /url: /html/0/256/
+      - text: 、
+      - link "红警1895" [ref=f3e65] [cursor=pointer]:
+        - /url: /html/65/65792/
+      - text: 、
+      - link "模拟受苦：反手让魔女替我模拟" [ref=f3e66] [cursor=pointer]:
+        - /url: /html/131/131328/
+      - text: 、
+      - link "闪婚后发现老公是亿万富豪小说" [ref=f3e67] [cursor=pointer]:
+        - /url: /html/0/512/
+      - text: 、
+      - link "春秋我为王" [ref=f3e68] [cursor=pointer]:
+        - /url: /html/66/66048/
+      - text: 、
+      - link "过去那些过不去的人" [ref=f3e69] [cursor=pointer]:
+        - /url: /html/131/131584/
+      - text: 、
+      - link "我给狐仙当女婿大结局" [ref=f3e70] [cursor=pointer]:
+        - /url: /html/66/66304/
+      - text: 、
+      - link "末日求生开局有求必应百倍暴击" [ref=f3e71] [cursor=pointer]:
+        - /url: /html/131/131840/
+      - text: 、
+      - link "废物皇子为何要逼我做皇帝全文免费阅读" [ref=f3e72] [cursor=pointer]:
+        - /url: /html/1/1024/
+      - text: 、
+      - link "蝶舞霓裳化清风" [ref=f3e73] [cursor=pointer]:
+        - /url: /html/66/66560/
+      - text: 、
+      - link "我地球救世主" [ref=f3e74] [cursor=pointer]:
+        - /url: /html/132/132096/
+      - text: 、
+      - link "海贼王：帝国独裁者" [ref=f3e75] [cursor=pointer]:
+        - /url: /html/66/66816/
+      - text: 、
+      - link "大唐龙雀卫" [ref=f3e76] [cursor=pointer]:
+        - /url: /html/132/132352/
+      - text: 、
+      - link "谪仙归来" [ref=f3e77] [cursor=pointer]:
+        - /url: /html/67/67072/
+      - text: 、
+      - link "北宋穿越指南小说免费阅读完整版" [ref=f3e78] [cursor=pointer]:
+        - /url: /html/132/132608/
+      - text: 、
+      - link "在你之后，我没有拿的出手的痛苦" [ref=f3e79] [cursor=pointer]:
+        - /url: /html/67/67328/
+      - text: 、
+      - link "天灾合成大师" [ref=f3e80] [cursor=pointer]:
+        - /url: /html/132/132864/
+      - text: 、
+      - link "在义庄当守尸人那些年在线阅读" [ref=f3e81] [cursor=pointer]:
+        - /url: /html/67/67584/
+      - text: 、
+  - generic [ref=f3e82]:
+    - generic [ref=f3e83]:
+      - generic [ref=f3e84]:
+        - term [ref=f3e85]:
+          - link "玄鉴仙族" [ref=f3e86] [cursor=pointer]:
+            - /url: /html/161/161429/
+          - text: 最新章节（2026-07-26 20:00:36更新）
+        - link "说明and请假一日":
+          - /url: /html/161/161429/24507876.html
+          - definition [ref=f3e87] [cursor=pointer]: 说明and请假一日
+        - link "第1553章 斩司":
+          - /url: /html/161/161429/24507875.html
+          - definition [ref=f3e88] [cursor=pointer]: 第1553章 斩司
+        - link "第1552章 终殁（2）":
+          - /url: /html/161/161429/24494035.html
+          - definition [ref=f3e89] [cursor=pointer]: 第1552章 终殁（2）
+        - link "第1551章 勾结":
+          - /url: /html/161/161429/24478042.html
+          - definition [ref=f3e90] [cursor=pointer]: 第1551章 勾结
+        - link "第1550章 兄妹":
+          - /url: /html/161/161429/24465149.html
+          - definition [ref=f3e91] [cursor=pointer]: 第1550章 兄妹
+        - link "第1549章 计玄":
+          - /url: /html/161/161429/24452160.html
+          - definition [ref=f3e92] [cursor=pointer]: 第1549章 计玄
+        - link "第1548章 交易":
+          - /url: /html/161/161429/24439619.html
+          - definition [ref=f3e93] [cursor=pointer]: 第1548章 交易
+        - link "第1547章 中台":
+          - /url: /html/161/161429/24417915.html
+          - definition [ref=f3e94] [cursor=pointer]: 第1547章 中台
+        - link "第1546章 一界":
+          - /url: /html/161/161429/24402133.html
+          - definition [ref=f3e95] [cursor=pointer]: 第1546章 一界
+        - link "第1545章 九子":
+          - /url: /html/161/161429/24389770.html
+          - definition [ref=f3e96] [cursor=pointer]: 第1545章 九子
+        - link "第1544章 听阐":
+          - /url: /html/161/161429/23421496.html
+          - definition [ref=f3e97] [cursor=pointer]: 第1544章 听阐
+        - link "第1543章 抉路":
+          - /url: /html/161/161429/23399822.html
+          - definition [ref=f3e98] [cursor=pointer]: 第1543章 抉路
+        - term [ref=f3e99]:
+          - link "玄鉴仙族" [ref=f3e100] [cursor=pointer]:
+            - /url: /html/161/161429/
+          - text: 章节目录
+        - generic [ref=f3e101]:
+          - link "没有了" [ref=f3e103] [cursor=pointer]:
+            - /url: javascript:void(0);
+          - combobox [ref=f3e105]:
+            - option "第1章 - 第20章" [selected]
+            - option "第21章 - 第40章"
+            - option "第41章 - 第60章"
+            - option "第61章 - 第80章"
+            - option "第81章 - 第100章"
+            - option "第101章 - 第120章"
+            - option "第121章 - 第140章"
+            - option "第141章 - 第160章"
+            - option "第161章 - 第180章"
+            - option "第181章 - 第200章"
+            - option "第201章 - 第220章"
+            - option "第221章 - 第240章"
+            - option "第241章 - 第260章"
+            - option "第261章 - 第280章"
+            - option "第281章 - 第300章"
+            - option "第301章 - 第320章"
+            - option "第321章 - 第340章"
+            - option "第341章 - 第360章"
+            - option "第361章 - 第380章"
+            - option "第381章 - 第400章"
+            - option "第401章 - 第420章"
+            - option "第421章 - 第440章"
+            - option "第441章 - 第460章"
+            - option "第461章 - 第480章"
+            - option "第481章 - 第500章"
+            - option "第501章 - 第520章"
+            - option "第521章 - 第540章"
+            - option "第541章 - 第560章"
+            - option "第561章 - 第580章"
+            - option "第581章 - 第600章"
+            - option "第601章 - 第620章"
+            - option "第621章 - 第640章"
+            - option "第641章 - 第660章"
+            - option "第661章 - 第680章"
+            - option "第681章 - 第700章"
+            - option "第701章 - 第720章"
+            - option "第721章 - 第740章"
+            - option "第741章 - 第760章"
+            - option "第761章 - 第780章"
+            - option "第781章 - 第800章"
+            - option "第801章 - 第820章"
+            - option "第821章 - 第840章"
+            - option "第841章 - 第860章"
+            - option "第861章 - 第880章"
+            - option "第881章 - 第900章"
+            - option "第901章 - 第920章"
+            - option "第921章 - 第940章"
+            - option "第941章 - 第960章"
+            - option "第961章 - 第980章"
+            - option "第981章 - 第1000章"
+            - option "第1001章 - 第1020章"
+            - option "第1021章 - 第1040章"
+            - option "第1041章 - 第1060章"
+            - option "第1061章 - 第1080章"
+            - option "第1081章 - 第1100章"
+            - option "第1101章 - 第1120章"
+            - option "第1121章 - 第1140章"
+            - option "第1141章 - 第1160章"
+            - option "第1161章 - 第1180章"
+            - option "第1181章 - 第1200章"
+            - option "第1201章 - 第1220章"
+            - option "第1221章 - 第1240章"
+            - option "第1241章 - 第1260章"
+            - option "第1261章 - 第1280章"
+            - option "第1281章 - 第1300章"
+            - option "第1301章 - 第1320章"
+            - option "第1321章 - 第1340章"
+            - option "第1341章 - 第1360章"
+            - option "第1361章 - 第1380章"
+            - option "第1381章 - 第1400章"
+            - option "第1401章 - 第1420章"
+            - option "第1421章 - 第1440章"
+            - option "第1441章 - 第1460章"
+            - option "第1461章 - 第1480章"
+            - option "第1481章 - 第1500章"
+            - option "第1501章 - 第1520章"
+            - option "第1521章 - 第1540章"
+            - option "第1541章 - 第1560章"
+            - option "第1561章 - 第1580章"
+            - option "第1581章 - 第1600章"
+            - option "第1601章 - 第1620章"
+            - option "第1621章 - 第1640章"
+            - option "第1641章 - 第1654章"
+          - link "下一页" [ref=f3e107] [cursor=pointer]:
+            - /url: /html/161/161429_2/
+        - link "第1章 初入":
+          - /url: /html/161/161429/17784655.html
+          - definition [ref=f3e108] [cursor=pointer]: 第1章 初入
+        - link "第2章 李家":
+          - /url: /html/161/161429/17784656.html
+          - definition [ref=f3e109] [cursor=pointer]: 第2章 李家
+        - link "第3章 鉴子":
+          - /url: /html/161/161429/17784657.html
+          - definition [ref=f3e110] [cursor=pointer]: 第3章 鉴子
+        - link "第4章 李叶盛":
+          - /url: /html/161/161429/17784658.html
+          - definition [ref=f3e111] [cursor=pointer]: 第4章 李叶盛
+        - link "第5章 仙缘难得":
+          - /url: /html/161/161429/17784659.html
+          - definition [ref=f3e112] [cursor=pointer]: 第5章 仙缘难得
+        - link "第6章 玉石":
+          - /url: /html/161/161429/17784660.html
+          - definition [ref=f3e113] [cursor=pointer]: 第6章 玉石
+        - link "第7章 法诀":
+          - /url: /html/161/161429/17784661.html
+          - definition [ref=f3e114] [cursor=pointer]: 第7章 法诀
+        - link "第8章 接引法":
+          - /url: /html/161/161429/17784662.html
+          - definition [ref=f3e115] [cursor=pointer]: 第8章 接引法
+        - link "第9章 白丸":
+          - /url: /html/161/161429/17784663.html
+          - definition [ref=f3e116] [cursor=pointer]: 第9章 白丸
+        - link "第10章 结亲":
+          - /url: /html/161/161429/17784664.html
+          - definition [ref=f3e117] [cursor=pointer]: 第10章 结亲
+        - link "第11章 夏至":
+          - /url: /html/161/161429/17784665.html
+          - definition [ref=f3e118] [cursor=pointer]: 第11章 夏至
+        - link "第12章 金光术":
+          - /url: /html/161/161429/17784666.html
+          - definition [ref=f3e119] [cursor=pointer]: 第12章 金光术
+        - link "第13章 杀人":
+          - /url: /html/161/161429/17784667.html
+          - definition [ref=f3e120] [cursor=pointer]: 第13章 杀人
+        - link "第14章 长湖与项平":
+          - /url: /html/161/161429/17784668.html
+          - definition [ref=f3e121] [cursor=pointer]: 第14章 长湖与项平
+        - link "第15章 难民":
+          - /url: /html/161/161429/17784669.html
+          - definition [ref=f3e122] [cursor=pointer]: 第15章 难民
+        - link "第16章 孽缘 上":
+          - /url: /html/161/161429/17784670.html
+          - definition [ref=f3e123] [cursor=pointer]: 第16章 孽缘 上
+        - link "第17章 孽缘 下":
+          - /url: /html/161/161429/17784671.html
+          - definition [ref=f3e124] [cursor=pointer]: 第17章 孽缘 下
+        - link "第18章 三年":
+          - /url: /html/161/161429/17784672.html
+          - definition [ref=f3e125] [cursor=pointer]: 第18章 三年
+        - link "第19章 修士":
+          - /url: /html/161/161429/17784673.html
+          - definition [ref=f3e126] [cursor=pointer]: 第19章 修士
+        - link "第20章 拜师":
+          - /url: /html/161/161429/17784674.html
+          - definition [ref=f3e127] [cursor=pointer]: 第20章 拜师
+        - generic [ref=f3e128]:
+          - link "没有了" [ref=f3e130] [cursor=pointer]:
+            - /url: javascript:void(0);
+          - combobox [ref=f3e132]:
+            - option "第1章 - 第20章" [selected]
+            - option "第21章 - 第40章"
+            - option "第41章 - 第60章"
+            - option "第61章 - 第80章"
+            - option "第81章 - 第100章"
+            - option "第101章 - 第120章"
+            - option "第121章 - 第140章"
+            - option "第141章 - 第160章"
+            - option "第161章 - 第180章"
+            - option "第181章 - 第200章"
+            - option "第201章 - 第220章"
+            - option "第221章 - 第240章"
+            - option "第241章 - 第260章"
+            - option "第261章 - 第280章"
+            - option "第281章 - 第300章"
+            - option "第301章 - 第320章"
+            - option "第321章 - 第340章"
+            - option "第341章 - 第360章"
+            - option "第361章 - 第380章"
+            - option "第381章 - 第400章"
+            - option "第401章 - 第420章"
+            - option "第421章 - 第440章"
+            - option "第441章 - 第460章"
+            - option "第461章 - 第480章"
+            - option "第481章 - 第500章"
+            - option "第501章 - 第520章"
+            - option "第521章 - 第540章"
+            - option "第541章 - 第560章"
+            - option "第561章 - 第580章"
+            - option "第581章 - 第600章"
+            - option "第601章 - 第620章"
+            - option "第621章 - 第640章"
+            - option "第641章 - 第660章"
+            - option "第661章 - 第680章"
+            - option "第681章 - 第700章"
+            - option "第701章 - 第720章"
+            - option "第721章 - 第740章"
+            - option "第741章 - 第760章"
+            - option "第761章 - 第780章"
+            - option "第781章 - 第800章"
+            - option "第801章 - 第820章"
+            - option "第821章 - 第840章"
+            - option "第841章 - 第860章"
+            - option "第861章 - 第880章"
+            - option "第881章 - 第900章"
+            - option "第901章 - 第920章"
+            - option "第921章 - 第940章"
+            - option "第941章 - 第960章"
+            - option "第961章 - 第980章"
+            - option "第981章 - 第1000章"
+            - option "第1001章 - 第1020章"
+            - option "第1021章 - 第1040章"
+            - option "第1041章 - 第1060章"
+            - option "第1061章 - 第1080章"
+            - option "第1081章 - 第1100章"
+            - option "第1101章 - 第1120章"
+            - option "第1121章 - 第1140章"
+            - option "第1141章 - 第1160章"
+            - option "第1161章 - 第1180章"
+            - option "第1181章 - 第1200章"
+            - option "第1201章 - 第1220章"
+            - option "第1221章 - 第1240章"
+            - option "第1241章 - 第1260章"
+            - option "第1261章 - 第1280章"
+            - option "第1281章 - 第1300章"
+            - option "第1301章 - 第1320章"
+            - option "第1321章 - 第1340章"
+            - option "第1341章 - 第1360章"
+            - option "第1361章 - 第1380章"
+            - option "第1381章 - 第1400章"
+            - option "第1401章 - 第1420章"
+            - option "第1421章 - 第1440章"
+            - option "第1441章 - 第1460章"
+            - option "第1461章 - 第1480章"
+            - option "第1481章 - 第1500章"
+            - option "第1501章 - 第1520章"
+            - option "第1521章 - 第1540章"
+            - option "第1541章 - 第1560章"
+            - option "第1561章 - 第1580章"
+            - option "第1581章 - 第1600章"
+            - option "第1601章 - 第1620章"
+            - option "第1621章 - 第1640章"
+            - option "第1641章 - 第1654章"
+          - link "下一页" [ref=f3e134] [cursor=pointer]:
+            - /url: /html/161/161429_2/
+      - paragraph [ref=f3e135]:
+        - text: 《
+        - link "玄鉴仙族" [ref=f3e136] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/html/161/161429/
+        - text: 》情节跌宕起伏、扣人心弦，是一本情节与文笔俱佳的武侠仙侠，文学迷转载收集
+        - link "玄鉴仙族" [ref=f3e137] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/html/161/161429/
+        - text: 最新章节。
+    - generic [ref=f3e138]:
+      - text: 最新小说：
+      - link "魔界求生，从契约暴君开始" [ref=f3e139] [cursor=pointer]:
+        - /url: /html/184/184147/
+      - link "僵尸世界：开局拜师雷电法王" [ref=f3e140] [cursor=pointer]:
+        - /url: /html/184/184309/
+      - link "凡尘试炼" [ref=f3e141] [cursor=pointer]:
+        - /url: /html/184/184183/
+      - link "朝廷鹰犬的一万种死法" [ref=f3e142] [cursor=pointer]:
+        - /url: /html/184/184262/
+      - link "红湖玄鉴" [ref=f3e143] [cursor=pointer]:
+        - /url: /html/184/184267/
+      - link "灵山" [ref=f3e144] [cursor=pointer]:
+        - /url: /html/184/184099/
+      - link "浮世鹰绘" [ref=f3e145] [cursor=pointer]:
+        - /url: /html/184/184114/
+      - link "万苦霸体诀" [ref=f3e146] [cursor=pointer]:
+        - /url: /html/184/184175/
+      - link "说好同学聚会，群穿仙侠什么鬼" [ref=f3e147] [cursor=pointer]:
+        - /url: /html/184/184299/
+      - link "看见弹幕后，白莲小师妹卷哭全宗" [ref=f3e148] [cursor=pointer]:
+        - /url: /html/184/184261/
+      - link "反派邪修：开局我是瘸腿老头" [ref=f3e149] [cursor=pointer]:
+        - /url: /html/184/184284/
+      - link "我在仙门收尸三十年" [ref=f3e150] [cursor=pointer]:
+        - /url: /html/184/184116/
+  - contentinfo [ref=f3e151]:
+    - generic [ref=f3e152]:
+      - paragraph [ref=f3e153]:
+        - link "SiteMap" [ref=f3e154] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/sitemap/bookindex.xml
+      - paragraph [ref=f3e155]: 本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。
+      - paragraph [ref=f3e156]:
+        - text: Copyright © 2016
+        - link "官术网" [ref=f3e157] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/
+        - text: All Rights Reserved.
+      - paragraph [ref=f3e158]:
+        - text: 欢迎大家收藏本站
+        - link "网站地图" [ref=f3e159] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/sitemap/bookindex.xml
+        - link "网站导航" [ref=f3e160] [cursor=pointer]:
+          - /url: https://www.guanshuya.net/map/1/1.html
+      - generic [ref=f3e161]: 返回顶部

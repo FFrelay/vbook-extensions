@@ -1,0 +1,59 @@
+{
+  "step": "published",
+  "bootstrapped": true,
+  "env_ok": true,
+  "extension_name": "guanshuya",
+  "inspected_urls": {
+    "https://www.guanshuya.net/class2-1.html": {
+      "timestamp": "2026-07-26T13:29:49.295Z",
+      "selectors": {
+        "code": 1,
+        "data": "fetch failed: 403"
+      }
+    },
+    "https://m.guanshuya.net/top.html": {
+      "timestamp": "2026-07-26T13:38:46.027Z",
+      "selectors": {}
+    },
+    "https://m.guanshuya.net/html/161/161429/24389770.html": {
+      "timestamp": "2026-07-26T13:38:46.492Z",
+      "selectors": {}
+    },
+    "https://m.guanshuya.net/html/161/161429/": {
+      "timestamp": "2026-07-26T13:38:46.129Z",
+      "selectors": {}
+    }
+  },
+  "debugged_scripts": [
+    "detail.js",
+    "test.js",
+    "gen.js",
+    "page.js",
+    "toc.js",
+    "chap.js"
+  ],
+  "required_scripts": [],
+  "violations_log": [
+    {
+      "timestamp": "2026-07-26T13:29:43.723Z",
+      "message": "Gate blocked: validate (requires code_written)"
+    },
+    {
+      "timestamp": "2026-07-26T13:40:18.963Z",
+      "message": "write_extension_script rejected: 1 lỗi tìm thấy: missing execute()"
+    },
+    {
+      "timestamp": "2026-07-26T13:40:46.181Z",
+      "message": "write_extension_script rejected: 1 lỗi tìm thấy: missing execute()"
+    }
+  ],
+  "docs_loaded": [
+    "00_BOOTSTRAP.md",
+    "01_runtime.md",
+    "01_runtime_api.md",
+    "02_workflow.md",
+    "03_HARD_SITES.md",
+    "04_demo.md"
+  ],
+  "updated_at": "2026-07-26T13:41:52.932Z"
+}

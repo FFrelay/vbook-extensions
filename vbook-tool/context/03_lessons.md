@@ -30,3 +30,8 @@ Signal: how to detect it.
 
 Fix: concrete rule or code pattern.
 ```
+
+
+---
+
+## guanshuya — m.guanshuya.net TOC pagination via `_N` suffix + select dropdown\n\n**Problem:** Mục lục phân trang dạng `/html/ID/ID_N/` (e.g. `/html/161/161429_2/`) và cơ chế chọn trang qua `<select id=\"indexselect\">` thay vì phân trang thông thường. TOC chứa lẫn link điều hướng (trang chủ, "没有了", "下一页") với link chapter thật. Chapter content dùng thẻ `<div id=\"chaptercontent\">`.\n\n**Solution:**\n- `page.js`: parse `#indexselect option` values để lấy toàn bộ URL các trang TOC (select chứa tất cả page trong dropdown). Unshift URL gốc vào đầu nếu chưa có.\n- `toc.js`: filter `chapUrl.indexOf(\".html\") < 0` để loại link không phải chapter. Dùng `#list dl a` selector.\n- `chap.js`: dùng `#chaptercontent` selector, remove `.dUAFnx` và các thẻ lạ `nag4bv, wjhu8i, v2uspe, d89e0n` (quảng cáo injected).\n- `detail.js`: dùng `#fmimg img.lazy` với `data-original` fallback `src`, status từ `.visible-xs` chứa "状态：", genre từ breadcrumb `.con_top a:nth-child(2)`."

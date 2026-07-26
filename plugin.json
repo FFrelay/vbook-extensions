@@ -1,41 +1,52 @@
 {
-  "metadata": {
-    "author": "FFrelay",
-    "description": "DIY"
-  },
-  "data": [
-    {
-      "name": "69shuba",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/69shuba/plugin.zip",
-      "version": 4,
-      "source": "https://www.69shuba.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/69shuba/icon.png",
-      "description": "Đọc truyện trên trang 69shuba",
-      "type": "chinese_novel",
-      "locale": "zh_CN"
+    "metadata": {
+        "author": "FFrelay",
+        "description": "📛🔻📛"
     },
-    {
-      "name": "14ksw",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/14ksw/plugin.zip",
-      "version": 5,
-      "source": "https://m.14ksw.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/14ksw/icon.png",
-      "description": "Đọc truyện trên trang 14ksw",
-      "type": "chinese_novel",
-      "locale": "zh_CN"
-    },
-    {
-      "name": "sto66",
-      "author": "FFrelay",
-      "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/plugin.zip",
-      "version": 7,
-      "source": "https://www.sto66.com",
-      "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/icon.png",
-      "description": "Đọc truyện trên trang sto66 (思兔阅读)",
-      "type": "chinese_novel",
-      "locale": "zh_CN"
-    }
-  ]
+    "data": [
+        {
+            "name": "14ksw",
+            "author": "FFrelay",
+            "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/14ksw/plugin.zip",
+            "version": 5,
+            "source": "https://m.14ksw.com",
+            "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/14ksw/icon.png",
+            "description": "Đọc truyện trên trang 14ksw",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
+        },
+        {
+            "name": "69shuba",
+            "author": "FFrelay",
+            "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/69shuba/plugin.zip",
+            "version": 4,
+            "source": "https://www.69shuba.com",
+            "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/69shuba/icon.png",
+            "description": "Đọc truyện trên trang 69shuba",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
+        },
+        {
+            "name": "guanshuya",
+            "author": "FFrelay",
+            "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/guanshuya/plugin.zip",
+            "version": 2,
+            "source": "https://m.guanshuya.net",
+            "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/guanshuya/icon.png",
+            "description": "guanshuya - Tiểu thuyết Trung Quốc",
+            "type": "novel",
+            "locale": "zh_CN"
+        },
+        {
+            "name": "sto66",
+            "author": "FFrelay",
+            "path": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/plugin.zip",
+            "version": 7,
+            "source": "https://www.sto66.com",
+            "icon": "https://raw.githubusercontent.com/FFrelay/vbook-extensions/main/extensions/sto66/icon.png",
+            "description": "Đọc truyện trên trang sto66 (思兔阅读)",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
+        }
+    ]
 }

@@ -1,0 +1,515 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: /
+      - text: 官术网
+      - paragraph [ref=e5]: www.guanshuya.net
+    - link "会员书架" [ref=e6] [cursor=pointer]:
+      - /url: /user/login.php
+    - generic [ref=e8]:
+      - textbox "可搜书名，请您少字也别输错字" [ref=e9]
+      - button "搜 索" [ref=e10] [cursor=pointer]
+  - generic [ref=e11]:
+    - list:
+      - listitem [ref=e12]:
+        - link "首页" [ref=e13] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e14]:
+        - link "热门" [ref=e15] [cursor=pointer]:
+          - /url: /top.html
+      - listitem [ref=e16]:
+        - link "玄幻" [ref=e17] [cursor=pointer]:
+          - /url: /class1-1.html
+      - listitem [ref=e18]:
+        - link "武侠" [ref=e19] [cursor=pointer]:
+          - /url: /class2-1.html
+      - listitem [ref=e20]:
+        - link "都市" [ref=e21] [cursor=pointer]:
+          - /url: /class3-1.html
+      - listitem [ref=e22]:
+        - link "历史" [ref=e23] [cursor=pointer]:
+          - /url: /class4-1.html
+      - listitem [ref=e24]:
+        - link "科幻" [ref=e25] [cursor=pointer]:
+          - /url: /class5-1.html
+      - listitem [ref=e26]:
+        - link "网游" [ref=e27] [cursor=pointer]:
+          - /url: /class6-1.html
+      - listitem [ref=e28]:
+        - link "女生" [ref=e29] [cursor=pointer]:
+          - /url: /class7-1.html
+      - listitem [ref=e30]:
+        - link "记录" [ref=e31] [cursor=pointer]:
+          - /url: /dll.html
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - heading [level=2] [ref=e35]:
+          - link "小说总点击榜" [ref=e36] [cursor=pointer]:
+            - /url: /top/all.html
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "邪王追妻：废材逆天小姐" [ref=e39] [cursor=pointer]:
+              - /url: /html/44/44599/
+            - generic [ref=e40]: 苏小暖
+          - listitem [ref=e41]:
+            - link "大王饶命" [ref=e42] [cursor=pointer]:
+              - /url: /html/87/87031/
+            - generic [ref=e43]: 会说话的肘子
+          - listitem [ref=e44]:
+            - link "太古神王" [ref=e45] [cursor=pointer]:
+              - /url: /html/56/56502/
+            - generic [ref=e46]: 净无痕
+          - listitem [ref=e47]:
+            - link "凡人修仙传" [ref=e48] [cursor=pointer]:
+              - /url: /html/2/2082/
+            - generic [ref=e49]: 忘语
+          - listitem [ref=e50]:
+            - link "从斗罗开始打卡" [ref=e51] [cursor=pointer]:
+              - /url: /html/100/100250/
+            - generic [ref=e52]: 夏竖琴
+          - listitem [ref=e53]:
+            - link "上门龙婿（叶辰萧初然）" [ref=e54] [cursor=pointer]:
+              - /url: /html/100/100752/
+            - generic [ref=e55]: 叶辰萧初然
+          - listitem [ref=e56]:
+            - link "仙逆" [ref=e57] [cursor=pointer]:
+              - /url: /html/1/1054/
+            - generic [ref=e58]: 耳根
+          - listitem [ref=e59]:
+            - link "从火影开始卖罐子" [ref=e60] [cursor=pointer]:
+              - /url: /html/100/100187/
+            - generic [ref=e61]: 剑符文
+          - listitem [ref=e62]:
+            - link "无敌真寂寞" [ref=e63] [cursor=pointer]:
+              - /url: /html/87/87912/
+            - generic [ref=e64]: 新丰
+          - listitem [ref=e65]:
+            - link "斗罗之最强赘婿" [ref=e66] [cursor=pointer]:
+              - /url: /html/103/103649/
+            - generic [ref=e67]: 我真不想出名
+      - generic [ref=e68]:
+        - heading [level=2] [ref=e69]:
+          - link "小说月点击榜" [ref=e70] [cursor=pointer]:
+            - /url: /top/month.html
+        - list [ref=e71]:
+          - listitem [ref=e72]:
+            - link "朱寿穿越大明小说免费阅读" [ref=e73] [cursor=pointer]:
+              - /url: /html/143/143576/
+            - generic [ref=e74]: 朱寿徐妙锦
+          - listitem [ref=e75]:
+            - link "将军妃" [ref=e76] [cursor=pointer]:
+              - /url: /html/20/20250/
+            - generic [ref=e77]: 曲殇
+          - listitem [ref=e78]:
+            - link "隐秘死角" [ref=e79] [cursor=pointer]:
+              - /url: /html/20/20220/
+            - generic [ref=e80]: 滚开
+          - listitem [ref=e81]:
+            - link "乡村最美少妇" [ref=e82] [cursor=pointer]:
+              - /url: /html/32/32127/
+            - generic [ref=e83]: 三生三世有你我
+          - listitem [ref=e84]:
+            - link "相亲走错桌，千亿总裁拉着我领证" [ref=e85] [cursor=pointer]:
+              - /url: /html/55/55992/
+            - generic [ref=e86]: 火书生
+          - listitem [ref=e87]:
+            - link "帝霸" [ref=e88] [cursor=pointer]:
+              - /url: /html/47/47834/
+            - generic [ref=e89]: 厌笔萧生
+          - listitem [ref=e90]:
+            - link "宋檀记事" [ref=e91] [cursor=pointer]:
+              - /url: /html/35/35466/
+            - generic [ref=e92]: 荆棘之歌
+          - listitem [ref=e93]:
+            - link "神魔游戏：法爷才是永恒真理！" [ref=e94] [cursor=pointer]:
+              - /url: /html/150/150067/
+            - generic [ref=e95]: 巧七
+          - listitem [ref=e96]:
+            - link "诱局" [ref=e97] [cursor=pointer]:
+              - /url: /html/149/149882/
+            - generic [ref=e98]: 梅公子
+          - listitem [ref=e99]:
+            - link "万兽仙尊" [ref=e100] [cursor=pointer]:
+              - /url: /html/14/14009/
+            - generic [ref=e101]: 大衍神君
+      - generic [ref=e102]:
+        - heading [level=2] [ref=e103]:
+          - link "小说周点击榜" [ref=e104] [cursor=pointer]:
+            - /url: /top/week.html
+        - list [ref=e105]:
+          - listitem [ref=e106]:
+            - link "神敌" [ref=e107] [cursor=pointer]:
+              - /url: /html/147/147005/
+            - generic [ref=e108]: 喜了
+          - listitem [ref=e109]:
+            - link "一代奸相陈九州整本免费" [ref=e110] [cursor=pointer]:
+              - /url: /html/100/100005/
+            - generic [ref=e111]: 苏不醒
+          - listitem [ref=e112]:
+            - link "初恋归来女神竟成了我的顶头上司" [ref=e113] [cursor=pointer]:
+              - /url: /html/148/148047/
+            - generic [ref=e114]: 加蛋是北极熊
+          - listitem [ref=e115]:
+            - link "灵异奇说" [ref=e116] [cursor=pointer]:
+              - /url: /html/104/104117/
+            - generic [ref=e117]: 鬼面道人
+          - listitem [ref=e118]:
+            - link "宋檀记事" [ref=e119] [cursor=pointer]:
+              - /url: /html/35/35466/
+            - generic [ref=e120]: 荆棘之歌
+          - listitem [ref=e121]:
+            - link "签约AC米兰后，我开摆了" [ref=e122] [cursor=pointer]:
+              - /url: /html/145/145942/
+            - generic [ref=e123]: 葬爱叶良辰
+          - listitem [ref=e124]:
+            - link "将军妃" [ref=e125] [cursor=pointer]:
+              - /url: /html/20/20250/
+            - generic [ref=e126]: 曲殇
+          - listitem [ref=e127]:
+            - link "万兽仙尊" [ref=e128] [cursor=pointer]:
+              - /url: /html/14/14009/
+            - generic [ref=e129]: 大衍神君
+          - listitem [ref=e130]:
+            - link "BB新闻" [ref=e131] [cursor=pointer]:
+              - /url: /html/13/13248/
+            - generic [ref=e132]: BB编辑
+          - listitem [ref=e133]:
+            - link "帝霸" [ref=e134] [cursor=pointer]:
+              - /url: /html/47/47834/
+            - generic [ref=e135]: 厌笔萧生
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - heading [level=2] [ref=e138]:
+          - link "玄幻奇幻点击榜" [ref=e139] [cursor=pointer]:
+            - /url: /class1-1.html
+        - list [ref=e140]:
+          - listitem [ref=e141]:
+            - link "太古神王" [ref=e142] [cursor=pointer]:
+              - /url: /html/56/56502/
+            - generic [ref=e143]: 净无痕
+          - listitem [ref=e144]:
+            - link "无敌真寂寞" [ref=e145] [cursor=pointer]:
+              - /url: /html/87/87912/
+            - generic [ref=e146]: 新丰
+          - listitem [ref=e147]:
+            - link "完美世界" [ref=e148] [cursor=pointer]:
+              - /url: /html/26/26011/
+            - generic [ref=e149]: 辰东
+          - listitem [ref=e150]:
+            - link "惊鸿txt下载" [ref=e151] [cursor=pointer]:
+              - /url: /html/100/100862/
+            - generic [ref=e152]: 李子夜秦婀娜李幼薇
+          - listitem [ref=e153]:
+            - link "武动乾坤" [ref=e154] [cursor=pointer]:
+              - /url: /html/0/2/
+            - generic [ref=e155]: 天蚕土豆
+          - listitem [ref=e156]:
+            - link "斗破苍穹之无上之境" [ref=e157] [cursor=pointer]:
+              - /url: /html/9/9751/
+            - generic [ref=e158]: 夜雨闻铃0
+          - listitem [ref=e159]:
+            - link "修罗天帝" [ref=e160] [cursor=pointer]:
+              - /url: /html/87/87371/
+            - generic [ref=e161]: 实验小白鼠
+          - listitem [ref=e162]:
+            - link "龙族" [ref=e163] [cursor=pointer]:
+              - /url: /html/111/111902/
+            - generic [ref=e164]: 江南
+          - listitem [ref=e165]:
+            - link "最强屠龙系统（龙血战皇）" [ref=e166] [cursor=pointer]:
+              - /url: /html/96/96247/
+            - generic [ref=e167]: 一眉道长
+          - listitem [ref=e168]:
+            - link "沧元图（仓元图）" [ref=e169] [cursor=pointer]:
+              - /url: /html/98/98360/
+            - generic [ref=e170]: 我吃西红柿
+      - generic [ref=e171]:
+        - heading [level=2] [ref=e172]:
+          - link "武侠仙侠点击榜" [ref=e173] [cursor=pointer]:
+            - /url: /class2-1.html
+        - list [ref=e174]:
+          - listitem [ref=e175]:
+            - link "凡人修仙传" [ref=e176] [cursor=pointer]:
+              - /url: /html/2/2082/
+            - generic [ref=e177]: 忘语
+          - listitem [ref=e178]:
+            - link "仙逆" [ref=e179] [cursor=pointer]:
+              - /url: /html/1/1054/
+            - generic [ref=e180]: 耳根
+          - listitem [ref=e181]:
+            - link "百炼成仙" [ref=e182] [cursor=pointer]:
+              - /url: /html/0/704/
+            - generic [ref=e183]: 幻雨
+          - listitem [ref=e184]:
+            - link "神秘复苏（神秘复苏）" [ref=e185] [cursor=pointer]:
+              - /url: /html/91/91128/
+            - generic [ref=e186]: 佛前献花
+          - listitem [ref=e187]:
+            - link "蛊真人" [ref=e188] [cursor=pointer]:
+              - /url: /html/19/19770/
+            - generic [ref=e189]: 蛊真人
+          - listitem [ref=e190]:
+            - link "道君" [ref=e191] [cursor=pointer]:
+              - /url: /html/85/85336/
+            - generic [ref=e192]: 跃千愁
+          - listitem [ref=e193]:
+            - link "飞剑问道" [ref=e194] [cursor=pointer]:
+              - /url: /html/87/87354/
+            - generic [ref=e195]: 我吃西红柿
+          - listitem [ref=e196]:
+            - link "一念永恒" [ref=e197] [cursor=pointer]:
+              - /url: /html/84/84622/
+            - generic [ref=e198]: 耳根
+          - listitem [ref=e199]:
+            - link "不朽凡人" [ref=e200] [cursor=pointer]:
+              - /url: /html/84/84624/
+            - generic [ref=e201]: 鹅是老五
+          - listitem [ref=e202]:
+            - link "我真不想当圣师" [ref=e203] [cursor=pointer]:
+              - /url: /html/100/100762/
+            - generic [ref=e204]: 神秘道人
+      - generic [ref=e205]:
+        - heading [level=2] [ref=e206]:
+          - link "都市言情点击榜" [ref=e207] [cursor=pointer]:
+            - /url: /class3-1.html
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - link "大王饶命" [ref=e210] [cursor=pointer]:
+              - /url: /html/87/87031/
+            - generic [ref=e211]: 会说话的肘子
+          - listitem [ref=e212]:
+            - link "上门龙婿（叶辰萧初然）" [ref=e213] [cursor=pointer]:
+              - /url: /html/100/100752/
+            - generic [ref=e214]: 叶辰萧初然
+          - listitem [ref=e215]:
+            - link "都市之至强战神" [ref=e216] [cursor=pointer]:
+              - /url: /html/100/100497/
+            - generic [ref=e217]: 梦岂
+          - listitem [ref=e218]:
+            - link "不败战神杨辰秦惜" [ref=e219] [cursor=pointer]:
+              - /url: /html/102/102561/
+            - generic [ref=e220]: 笑傲余生
+          - listitem [ref=e221]:
+            - link "我们是兄弟" [ref=e222] [cursor=pointer]:
+              - /url: /html/23/23365/
+            - generic [ref=e223]: 纯银耳坠
+          - listitem [ref=e224]:
+            - link "极品上门女婿（秦浩林若涵）" [ref=e225] [cursor=pointer]:
+              - /url: /html/99/99368/
+            - generic [ref=e226]: 不吃鱼的猫儿
+          - listitem [ref=e227]:
+            - link "都市无敌战神（林北苏婉）" [ref=e228] [cursor=pointer]:
+              - /url: /html/100/100307/
+            - generic [ref=e229]: 我不是z
+          - listitem [ref=e230]:
+            - link "超级全能学生" [ref=e231] [cursor=pointer]:
+              - /url: /html/93/93140/
+            - generic [ref=e232]: 杀猪刀
+          - listitem [ref=e233]:
+            - link "楚凌天楚思佳TXT下载" [ref=e234] [cursor=pointer]:
+              - /url: /html/0/974/
+            - generic [ref=e235]: 小龙鱼
+          - listitem [ref=e236]:
+            - link "万族之劫" [ref=e237] [cursor=pointer]:
+              - /url: /html/101/101372/
+            - generic [ref=e238]: 老鹰吃小鸡
+    - generic [ref=e239]:
+      - generic [ref=e240]:
+        - heading [level=2] [ref=e241]:
+          - link "历史军事点击榜" [ref=e242] [cursor=pointer]:
+            - /url: /class4-1.html
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - link "小阁老" [ref=e245] [cursor=pointer]:
+              - /url: /html/100/100350/
+            - generic [ref=e246]: 三戒大师
+          - listitem [ref=e247]:
+            - link "秦吏" [ref=e248] [cursor=pointer]:
+              - /url: /html/88/88430/
+            - generic [ref=e249]: 七月新番
+          - listitem [ref=e250]:
+            - link "从太监到皇帝小说免费阅读完整版（景宁陆景深）" [ref=e251] [cursor=pointer]:
+              - /url: /html/100/100127/
+            - generic [ref=e252]: 龙辰帝洛曦
+          - listitem [ref=e253]:
+            - link "赵氏虎子" [ref=e254] [cursor=pointer]:
+              - /url: /html/100/100221/
+            - generic [ref=e255]: 贱宗首席弟子
+          - listitem [ref=e256]:
+            - link "谍海争渡" [ref=e257] [cursor=pointer]:
+              - /url: /html/98/98972/
+            - generic [ref=e258]: 只爱煞英雄
+          - listitem [ref=e259]:
+            - link "汉乡" [ref=e260] [cursor=pointer]:
+              - /url: /html/86/86933/
+            - generic [ref=e261]: 孑与2
+          - listitem [ref=e262]:
+            - link "回到过去当特工" [ref=e263] [cursor=pointer]:
+              - /url: /html/100/100265/
+            - generic [ref=e264]: 我是曹宁
+          - listitem [ref=e265]:
+            - link "回到宋朝当暴君（赵洞庭颖儿）" [ref=e266] [cursor=pointer]:
+              - /url: /html/97/97066/
+            - generic [ref=e267]: 贰蛋
+          - listitem [ref=e268]:
+            - link "宋朝败家子" [ref=e269] [cursor=pointer]:
+              - /url: /html/95/95884/
+            - generic [ref=e270]: 吃货大联盟
+          - listitem [ref=e271]:
+            - link "帝凰之神医弃妃" [ref=e272] [cursor=pointer]:
+              - /url: /html/24/24510/
+            - generic [ref=e273]: 阿彩
+      - generic [ref=e274]:
+        - heading [level=2] [ref=e275]:
+          - link "科幻灵异点击榜" [ref=e276] [cursor=pointer]:
+            - /url: /class5-1.html
+        - list [ref=e277]:
+          - listitem [ref=e278]:
+            - link "惊悚乐园" [ref=e279] [cursor=pointer]:
+              - /url: /html/23/23349/
+            - generic [ref=e280]: 三天两觉
+          - listitem [ref=e281]:
+            - link "斩月" [ref=e282] [cursor=pointer]:
+              - /url: /html/100/100180/
+            - generic [ref=e283]: 失落叶
+          - listitem [ref=e284]:
+            - link "时婳霍权辞" [ref=e285] [cursor=pointer]:
+              - /url: /html/102/102794/
+            - generic [ref=e286]: 二桥
+          - listitem [ref=e287]:
+            - link "英雄联盟之谁与争锋" [ref=e288] [cursor=pointer]:
+              - /url: /html/40/40315/
+            - generic [ref=e289]: 乱
+          - listitem [ref=e290]:
+            - link "火影：宇智波遗孤，我不要灭族免费阅读" [ref=e291] [cursor=pointer]:
+              - /url: /html/14/14560/
+            - generic [ref=e292]: 李若猫
+          - listitem [ref=e293]:
+            - link "网游之剑刃舞者" [ref=e294] [cursor=pointer]:
+              - /url: /html/44/44588/
+            - generic [ref=e295]: 不是闻人
+          - listitem [ref=e296]:
+            - link "从零开始" [ref=e297] [cursor=pointer]:
+              - /url: /html/0/479/
+            - generic [ref=e298]: 雷云风暴
+          - listitem [ref=e299]:
+            - link "邪医毒妃" [ref=e300] [cursor=pointer]:
+              - /url: /html/19/19805/
+            - generic [ref=e301]: 墨邪尘
+          - listitem [ref=e302]:
+            - link "CSGO之最强选手" [ref=e303] [cursor=pointer]:
+              - /url: /html/122/122090/
+            - generic [ref=e304]: 地精咖啡
+          - listitem [ref=e305]:
+            - link "打篮球太厉害了怎么办" [ref=e306] [cursor=pointer]:
+              - /url: /html/108/108501/
+            - generic [ref=e307]: 超级麦克风
+      - generic [ref=e308]:
+        - heading [level=2] [ref=e309]:
+          - link "网游竞技点击榜" [ref=e310] [cursor=pointer]:
+            - /url: /class6-1.html
+        - list [ref=e311]:
+          - listitem [ref=e312]:
+            - link "从斗罗开始打卡" [ref=e313] [cursor=pointer]:
+              - /url: /html/100/100250/
+            - generic [ref=e314]: 夏竖琴
+          - listitem [ref=e315]:
+            - link "从火影开始卖罐子" [ref=e316] [cursor=pointer]:
+              - /url: /html/100/100187/
+            - generic [ref=e317]: 剑符文
+          - listitem [ref=e318]:
+            - link "斗罗之最强赘婿" [ref=e319] [cursor=pointer]:
+              - /url: /html/103/103649/
+            - generic [ref=e320]: 我真不想出名
+          - listitem [ref=e321]:
+            - link "诸天万界BOSS聊天群" [ref=e322] [cursor=pointer]:
+              - /url: /html/100/100292/
+            - generic [ref=e323]: 梦日夕照
+          - listitem [ref=e324]:
+            - link "从诛仙开始复制诸天" [ref=e325] [cursor=pointer]:
+              - /url: /html/100/100321/
+            - generic [ref=e326]: 简单旋律
+          - listitem [ref=e327]:
+            - link "木叶的恶霸忍猫" [ref=e328] [cursor=pointer]:
+              - /url: /html/100/100223/
+            - generic [ref=e329]: 卖身葬节操
+          - listitem [ref=e330]:
+            - link "某魔法的霍格沃茨" [ref=e331] [cursor=pointer]:
+              - /url: /html/100/100351/
+            - generic [ref=e332]: 倾鸦
+          - listitem [ref=e333]:
+            - link "从契约精灵开始" [ref=e334] [cursor=pointer]:
+              - /url: /html/100/100201/
+            - generic [ref=e335]: 笔墨纸键
+          - listitem [ref=e336]:
+            - link "我以为自己能养出火影" [ref=e337] [cursor=pointer]:
+              - /url: /html/100/100280/
+            - generic [ref=e338]: 浓墨浇书
+          - listitem [ref=e339]:
+            - link "被召唤成巨人是什么体验" [ref=e340] [cursor=pointer]:
+              - /url: /html/100/100210/
+            - generic [ref=e341]: 盾山
+    - generic [ref=e343]:
+      - heading [level=2] [ref=e344]:
+        - link "女生频道点击榜" [ref=e345] [cursor=pointer]:
+          - /url: /class7-1.html
+      - list [ref=e346]:
+        - listitem [ref=e347]:
+          - link "邪王追妻：废材逆天小姐" [ref=e348] [cursor=pointer]:
+            - /url: /html/44/44599/
+          - generic [ref=e349]: 苏小暖
+        - listitem [ref=e350]:
+          - link "大神你人设崩了（孟拂苏承）" [ref=e351] [cursor=pointer]:
+            - /url: /html/101/101935/
+          - generic [ref=e352]: 一路烦花
+        - listitem [ref=e353]:
+          - link "快穿：反派太宠太撩人txt下载" [ref=e354] [cursor=pointer]:
+            - /url: /html/74/74616/
+          - generic [ref=e355]: 太史婴
+        - listitem [ref=e356]:
+          - link "重生侯府嫡女沈清辞" [ref=e357] [cursor=pointer]:
+            - /url: /html/100/100817/
+          - generic [ref=e358]: 夏染雪
+        - listitem [ref=e359]:
+          - link "穿成前任叔叔的掌心娇" [ref=e360] [cursor=pointer]:
+            - /url: /html/109/109937/
+          - generic [ref=e361]: 楚玥
+        - listitem [ref=e362]:
+          - link "偏执老公霸道宠（甜蜜吻安：总裁老公超棒的）" [ref=e363] [cursor=pointer]:
+            - /url: /html/99/99502/
+          - generic [ref=e364]: 花重
+        - listitem [ref=e365]:
+          - link "坤宁" [ref=e366] [cursor=pointer]:
+            - /url: /html/109/109542/
+          - generic [ref=e367]: 时镜
+        - listitem [ref=e368]:
+          - link "我的老公是冥王" [ref=e369] [cursor=pointer]:
+            - /url: /html/116/116958/
+          - generic [ref=e370]: 见字如面
+        - listitem [ref=e371]:
+          - link "迪奥先生" [ref=e372] [cursor=pointer]:
+            - /url: /html/102/102956/
+          - generic [ref=e373]: 绿野千鹤
+        - listitem [ref=e374]:
+          - link "开局植物人?首富之子为我冲喜全文阅读完整版" [ref=e375] [cursor=pointer]:
+            - /url: /html/40/40450/
+          - generic [ref=e376]: 安缨
+    - contentinfo [ref=e377]:
+      - generic [ref=e378]:
+        - paragraph [ref=e379]:
+          - link "SiteMap" [ref=e380] [cursor=pointer]:
+            - /url: https://www.guanshuya.net/sitemap/bookindex.xml
+        - paragraph [ref=e381]: 本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。
+        - paragraph [ref=e382]:
+          - text: Copyright © 2016
+          - link "官术网" [ref=e383] [cursor=pointer]:
+            - /url: https://www.guanshuya.net/
+          - text: All Rights Reserved.
+        - paragraph [ref=e384]:
+          - text: 欢迎大家收藏本站
+          - link "网站地图" [ref=e385] [cursor=pointer]:
+            - /url: https://www.guanshuya.net/sitemap/bookindex.xml
+          - link "网站导航" [ref=e386] [cursor=pointer]:
+            - /url: https://www.guanshuya.net/map/1/1.html
+        - generic [ref=e387]: 返回顶部
