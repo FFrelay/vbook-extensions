@@ -11,7 +11,16 @@ function execute(url) {
     var chapters = [];
     var seen = {};
 
-    doc.select("#list dl a").forEach(function (el) {
+    var dlHtml = doc.select("#list dl").html() + "";
+
+    var marker = "章节目录";
+    var markerIndex = dlHtml.indexOf(marker);
+    if (markerIndex >= 0) {
+        dlHtml = dlHtml.substring(markerIndex);
+    }
+
+    var sectionDoc = Html.parse(dlHtml);
+    sectionDoc.select("a").forEach(function (el) {
         var name = (el.text() + "").trim();
         var chapUrl = (el.attr("href") || "") + "";
 

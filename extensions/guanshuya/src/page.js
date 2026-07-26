@@ -33,10 +33,5 @@ function execute(url) {
 
     if (pages.length === 0) return Response.success([url]);
 
-    var first = pages[0];
-    if (first !== url) {
-        pages.unshift(url);
-    }
-
     return Response.success(pages);
 }

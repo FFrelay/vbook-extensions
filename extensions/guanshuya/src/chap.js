@@ -18,5 +18,10 @@ function execute(url) {
 
     content = content.replace(/&nbsp;/g, " ");
 
+    var endMarker = content.indexOf("《<a");
+    if (endMarker >= 0) {
+        content = content.substring(0, endMarker);
+    }
+
     return Response.success(content);
 }
