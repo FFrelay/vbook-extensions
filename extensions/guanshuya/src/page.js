@@ -20,17 +20,6 @@ function execute(url) {
         pages.push(href);
     });
 
-    if (pages.length === 0) {
-        var nextLink = doc.select(".listpage .right a.onclick").first();
-        if (nextLink) {
-            var href = (nextLink.attr("href") || "") + "";
-            if (href && href.indexOf("javascript:") < 0) {
-                if (!href.startsWith("http")) href = BASE_URL + href;
-                pages.push(href);
-            }
-        }
-    }
-
     if (pages.length === 0) return Response.success([url]);
 
     return Response.success(pages);
