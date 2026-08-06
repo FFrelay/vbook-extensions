@@ -22,6 +22,62 @@
     "https://m.guanshuya.net/html/161/161429/": {
       "timestamp": "2026-07-26T13:38:46.129Z",
       "selectors": {}
+    },
+    "https://www.69shuba.com/book/51434.htm": {
+      "timestamp": "2026-08-06T08:38:40.603Z",
+      "selectors": {
+        "code": 0,
+        "data": {
+          "h1": "��������",
+          "h2_list": [],
+          "images": [
+            "https://cdn.cdnshu.com/files/article/image/51/51434/51434s.jpg"
+          ],
+          "links_sample": [
+            "https://www.69shuba.com/",
+            "https://www.69shuba.com/novels/class/2.htm",
+            "https://www.69shuba.com/book/51434.htm",
+            "https://www.69shuba.com/book/51434.htm",
+            "https://www.69shuba.com/modules/article/author.php?author=��Խ��",
+            "https://www.69shuba.com/novels/class/2.htm",
+            "https://www.69shuba.com/book/51434/",
+            "https://www.69shuba.com/txt/51434/41061866",
+            "https://www.69shuba.com/txt/51434/41061290",
+            "https://www.69shuba.com/txt/51434/41059936"
+          ],
+          "selectors": {}
+        }
+      }
+    },
+    "https://www.69shuba.com/novels/class/2.htm": {
+      "timestamp": "2026-08-06T08:40:23.155Z",
+      "selectors": {
+        "code": 0,
+        "data": {
+          "h1": "",
+          "h2_list": [],
+          "images": [
+            "https://cdn.cdnshu.com/images/user.png",
+            "https://cdn.cdnshu.com/images/user.png",
+            "https://cdn.cdnshu.com/files/article/image/48/48273/48273s.jpg",
+            "https://cdn.cdnshu.com/files/article/image/56/56531/56531s.jpg",
+            "https://cdn.cdnshu.com/files/article/image/85/85122/85122s.jpg"
+          ],
+          "links_sample": [
+            "https://www.69shuba.com/",
+            "https://www.69shuba.com/novels/hot",
+            "https://www.69shuba.com/novels/full",
+            "https://www.69shuba.com/novels/class/0.htm",
+            "/modules/article/bookcase.php",
+            "https://www.69shuba.com/jilu/",
+            "https://www.69shuba.com/newmessage.php?tosys=1&title=%B7%B4%C0%A1",
+            "https://www.69shuba.com/",
+            "https://www.69shuba.com/",
+            "https://www.69shuba.com/novels/hot"
+          ],
+          "selectors": {}
+        }
+      }
     }
   },
   "debugged_scripts": [
@@ -30,7 +86,8 @@
     "gen.js",
     "page.js",
     "toc.js",
-    "chap.js"
+    "chap.js",
+    "test_cover.js"
   ],
   "required_scripts": [],
   "violations_log": [
@@ -55,5 +112,5 @@
     "03_HARD_SITES.md",
     "04_demo.md"
   ],
-  "updated_at": "2026-07-26T13:41:52.932Z"
+  "updated_at": "2026-08-06T08:40:23.155Z"
 }
