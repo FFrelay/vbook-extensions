@@ -1,8 +1,5 @@
-// chap.js — alternative to page.js: return the comic page image list straight
-// from chap.js instead of a dedicated page.js. Use ONE of the two, not both —
-// pick this file and drop page.js (remove "page" from plugin.json.script) if
-// the site has no separate page-list endpoint; otherwise keep page.js and
-// delete this file.
+// chap.js — REQUIRED comic per-chapter content. Return the ordered image URL
+// array; page.js, when declared, only paginates the table of contents.
 load('config.js');
 function execute(url) {
     url = normalizeUrl(url);
@@ -12,6 +9,8 @@ function execute(url) {
 
     let images = doc.select("SELECTOR_PAGE_IMAGES img").map(function (el) {
         // Many comic sites lazy-load — prefer data-src over src.
+        // Images load with Referer = chapter URL; if the CDN rejects that, return
+        // { link: url, referrerpolicy: "no-referrer" } (or "origin") instead.
         return el.attr("data-src") || el.attr("src");
     });
 

@@ -1,7 +1,6 @@
-// page.js — dedicated comic image list. Use ONE of page.js/chap.js, not both —
-// keep this file and delete chap.js if the site has a separate page-list
-// endpoint; otherwise use chap.js instead (see that file) and remove "page"
-// from plugin.json.script.
+// page.js — OPTIONAL TOC pagination. Declare it only when the site splits one
+// title's chapter list over multiple pages. Return absolute page URLs in order;
+// the app calls toc.js on every returned URL.
 load('config.js');
 function execute(url) {
     url = normalizeUrl(url);
@@ -9,10 +8,9 @@ function execute(url) {
     if (!response.ok) return Response.error("HTTP " + response.status);
     let doc = response.html();
 
-    let images = doc.select("SELECTOR_PAGE_IMAGES img").map(function (el) {
-        // Many comic sites lazy-load — prefer data-src over src.
-        return el.attr("data-src") || el.attr("src");
+    let pages = doc.select("SELECTOR_TOC_PAGE_LINKS a").map(function (el) {
+        return el.absUrl("href");
     });
 
-    return Response.success(images);
+    return Response.success(pages);
 }
